@@ -6,3 +6,5 @@ python-dotenv
 PyPDF2
 pandas
 pycryptodome
+bcrypt
+fpdf
