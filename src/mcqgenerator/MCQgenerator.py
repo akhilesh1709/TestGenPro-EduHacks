@@ -9,7 +9,7 @@ import streamlit as st
 load_dotenv()
 
 # Access the environment variables
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets.get("OPENAI_API_KEY")
 
 if not openai_api_key:
     raise ValueError("OpenAI API key is not set. Please check your .env file.")
