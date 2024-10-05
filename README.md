@@ -6,7 +6,7 @@ TestGenPro is an advanced AI-based tool that helps users create assessments, gen
 
 ### Team Members:
 
-1. AKhilesh T S
+1. Akhilesh T S
 2. Karthik Sriram V
 3. Abhishek Prasanna
 
