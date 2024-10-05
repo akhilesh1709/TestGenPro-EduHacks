@@ -1,0 +1,492 @@
+[2024-08-29 18:51:05,414] 35 root - INFO - File read successfully. Content length: 22630
+[2024-08-29 18:51:15,201] 1069 openai._base_client - INFO - Retrying request to /chat/completions in 0.934994 seconds
+[2024-08-29 18:51:16,157] 1069 openai._base_client - INFO - Retrying request to /chat/completions in 1.876626 seconds
+[2024-08-29 18:51:19,067] 72 root - ERROR - An error occurred: Connection error.
+[2024-08-29 18:51:19,212] 73 root - ERROR - Traceback (most recent call last):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 154, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 152, in start_tls
+    with map_exceptions(exc_map):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 973, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 38, in <module>
+    response = generate_evaluate_chain({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\_api\deprecation.py", line 170, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 381, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 164, in invoke
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\sequential.py", line 104, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\_api\deprecation.py", line 170, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 381, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 164, in invoke
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\llm.py", line 126, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\llm.py", line 138, in generate
+    return self.llm.generate_prompt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 776, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 633, in generate
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 623, in generate
+    self._generate_with_cache(
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 845, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_community\chat_models\openai.py", line 441, in _generate
+    response = self.completion_with_retry(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_community\chat_models\openai.py", line 356, in completion_with_retry
+    return self.client.create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\chat\completions.py", line 668, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 937, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 997, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1075, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 997, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1075, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1007, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+
+[2024-08-29 18:51:29,556] 35 root - INFO - File read successfully. Content length: 22630
+[2024-08-29 18:51:29,613] 1069 openai._base_client - INFO - Retrying request to /chat/completions in 0.766664 seconds
+[2024-08-29 18:51:30,623] 1069 openai._base_client - INFO - Retrying request to /chat/completions in 1.863352 seconds
+[2024-08-29 18:51:32,565] 72 root - ERROR - An error occurred: Connection error.
+[2024-08-29 18:51:32,569] 73 root - ERROR - Traceback (most recent call last):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 154, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 152, in start_tls
+    with map_exceptions(exc_map):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 973, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 38, in <module>
+    response = generate_evaluate_chain({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\_api\deprecation.py", line 170, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 381, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 164, in invoke
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\sequential.py", line 104, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\_api\deprecation.py", line 170, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 381, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 164, in invoke
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\llm.py", line 126, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\chains\llm.py", line 138, in generate
+    return self.llm.generate_prompt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 776, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 633, in generate
+    raise e
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 623, in generate
+    self._generate_with_cache(
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py", line 845, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_community\chat_models\openai.py", line 441, in _generate
+    response = self.completion_with_retry(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_community\chat_models\openai.py", line 356, in completion_with_retry
+    return self.client.create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\chat\completions.py", line 668, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 937, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 997, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1075, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 997, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1075, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1007, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+
+[2024-08-29 18:52:38,816] 35 root - INFO - File read successfully. Content length: 22630
+[2024-08-29 18:52:55,761] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-29 18:52:57,164] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-29 18:52:57,165] 45 root - INFO - OpenAI API call completed. Total tokens: 7228
+[2024-08-29 18:52:57,165] 50 root - INFO - Quiz data received from the API
+[2024-08-29 18:52:57,165] 41 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-29 18:52:57,165] 42 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "When should an entity adjust its financial statements for events after the reporting period?",
+        "options": {
+            "a": "When the event is favorable",
+            "b": "When the event is unfavorable",
+            "c": "When the event provides evidence of conditions that existed at the end of the reporting period",
+            "d": "When the event indicates conditions that arose after the reporting period"
+        },
+        "correct": "c"
+    },
+    "2": {
+        "mcq": "What type of events are considered as adjusting events after the reporting period?",
+        "options": {
+            "a": "Events that confirm the present obligation of the entity",
+            "b": "Events that are indicative of conditions that arose after the reporting period",
+            "c": "Events that do not impact the financial statements",
+            "d": "Events that are favorable"
+        },
+        "correct": "a"
+    },
+    "3": {
+        "mcq": "How should an entity recognize dividends declared after the reporting period?",
+        "options": {
+            "a": "Recognize as a liability at the end of the reporting period",
+            "b": "Recognize when the financial statements are approved for issue",
+            "c": "Do not recognize as a liability at the end of the reporting period",
+            "d": "Recognize when the shareholders approve the financial statements"
+        },
+        "correct": "c"
+    },
+    "4": {
+        "mcq": "Under what circumstances should an entity not prepare its financial statements on a going concern basis?",
+        "options": {
+            "a": "When it intends to liquidate the entity",
+            "b": "When operating results deteriorate after the reporting period",
+            "c": "When management determines it has no realistic alternative but to cease trading",
+            "d": "All of the above"
+        },
+        "correct": "d"
+    },
+    "5": {
+        "mcq": "What should an entity disclose about events after the reporting period?",
+        "options": {
+            "a": "The nature of the event",
+            "b": "An estimate of its financial effect",
+            "c": "Both a and b",
+            "d": "None of the above"
+        },
+        "correct": "c"
+    },
+    "6": {
+        "mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners?",
+        "options": {
+            "a": "At the carrying amount of the assets to be distributed",
+            "b": "At the historical cost of the assets to be distributed",
+            "c": "At the fair value of the assets to be distributed",
+            "d": "At the book value of the assets to be distributed"
+        },
+        "correct": "c"
+    },
+    "7": {
+        "mcq": "When should an entity recognise a dividend payable?",
+        "options": {
+            "a": "When the dividend is declared by shareholders",
+            "b": "When the dividend is declared by management",
+            "c": "When the dividend is approved by the relevant authority",
+            "d": "When the financial statements are approved for issue"
+        },
+        "correct": "c"
+    },
+    "8": {
+        "mcq": "How should an entity account for any difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable when settling the dividend?",
+        "options": {
+            "a": "Recognize in equity",
+            "b": "Recognize in profit or loss",
+            "c": "Recognize as a liability",
+            "d": "Do not recognize"
+        },
+        "correct": "b"
+    },
+    "9": {
+        "mcq": "Which type of events after the reporting period generally result in disclosure?",
+        "options": {
+            "a": "Minor business combinations",
+            "b": "Announcing a plan to discontinue an operation",
+            "c": "Abnormally small changes in asset prices",
+            "d": "Entering into insignificant commitments"
+        },
+        "correct": "b"
+    },
+    "10": {
+        "mcq": "What information should an entity disclose when declaring a dividend to distribute a non-cash asset after the reporting period?",
+        "options": {
+            "a": "The nature of the asset to be distributed",
+            "b": "The carrying amount of the asset to be distributed",
+            "c": "The fair value of the asset to be distributed if different from its carrying amount",
+            "d": "All of the above"
+        },
+        "correct": "d"
+    }
+}
+[2024-08-29 18:52:57,165] 62 root - ERROR - Failed to generate table data from quiz
+[2024-08-29 19:45:18,332] 35 root - INFO - File read successfully. Content length: 22630
+[2024-08-29 19:45:35,847] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-29 19:45:37,241] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-29 19:45:37,242] 45 root - INFO - OpenAI API call completed. Total tokens: 7213
+[2024-08-29 19:45:37,243] 50 root - INFO - Quiz data received from the API
+[2024-08-29 19:45:37,243] 41 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-29 19:45:37,243] 42 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "Which events after the reporting period require an entity to adjust the amounts recognized in its financial statements according to Ind AS 10?",
+        "options": {
+            "a": "Non-adjusting events",
+            "b": "Events indicating conditions that existed at the end of the reporting period",
+            "c": "Events indicating conditions that arose after the reporting period",
+            "d": "Both b and c"
+        },
+        "correct": "d"
+    },
+    "2": {
+        "mcq": "When should an entity adjust the amounts recognized in its financial statements for adjusting events after the reporting period?",
+        "options": {
+            "a": "At the end of the reporting period",
+            "b": "When the financial statements are approved for issue",
+            "c": "At the discretion of the entity",
+            "d": "When the shareholders approve the financial statements"
+        },
+        "correct": "b"
+    },
+    "3": {
+        "mcq": "What type of event is a decline in fair value of investments between the end of the reporting period and the date when the financial statements are approved for issue according to Ind AS 10?",
+        "options": {
+            "a": "Adjusting event",
+            "b": "Non-adjusting event",
+            "c": "Contingent event",
+            "d": "Disclosed event"
+        },
+        "correct": "b"
+    },
+    "4": {
+        "mcq": "When does an entity recognize a liability for dividends payable according to Appendix A of Ind AS 10?",
+        "options": {
+            "a": "When the dividends are declared",
+            "b": "When the financial statements are approved for issue",
+            "c": "When the assets are distributed",
+            "d": "When management approves the dividend distribution"
+        },
+        "correct": "a"
+    },
+    "5": {
+        "mcq": "How should an entity measure the dividend payable when distributing non-cash assets to its owners?",
+        "options": {
+            "a": "At historical cost",
+            "b": "At carrying amount of the assets to be distributed",
+            "c": "At fair value of the assets to be distributed",
+            "d": "At face value of the assets to be distributed"
+        },
+        "correct": "c"
+    },
+    "6": {
+        "mcq": "What should an entity do if there is a difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable when settling the dividend?",
+        "options": {
+            "a": "Recognize in equity",
+            "b": "Recognize in profit or loss",
+            "c": "Ignore the difference",
+            "d": "Adjust future dividends"
+        },
+        "correct": "b"
+    },
+    "7": {
+        "mcq": "In which financial statement should an entity present the difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable?",
+        "options": {
+            "a": "Income Statement",
+            "b": "Statement of Changes in Equity",
+            "c": "Statement of Financial Position",
+            "d": "Statement of Cash Flows"
+        },
+        "correct": "a"
+    },
+    "8": {
+        "mcq": "What information should an entity disclose if it declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue?",
+        "options": {
+            "a": "Nature of the asset to be distributed",
+            "b": "Carrying amount of the asset to be distributed",
+            "c": "Fair value of the asset to be distributed",
+            "d": "All of the above"
+        },
+        "correct": "d"
+    },
+    "9": {
+        "mcq": "Which category of events after the reporting period would generally result in disclosure according to Ind AS 10?",
+        "options": {
+            "a": "Adjusting events",
+            "b": "Non-adjusting events",
+            "c": "Material events",
+            "d": "All events"
+        },
+        "correct": "b"
+    },
+    "10": {
+        "mcq": "What does Ind AS 10 require an entity to disclose about the approval of financial statements for issue?",
+        "options": {
+            "a": "Date of approval and who gave the approval",
+            "b": "Details of all shareholders",
+            "c": "Details of upcoming events",
+            "d": "None of the above"
+        },
+        "correct": "a"
+    }
+}
+[2024-08-29 19:45:37,243] 62 root - ERROR - Failed to generate table data from quiz

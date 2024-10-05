@@ -1,0 +1,106 @@
+[2024-08-21 20:39:06,851] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:39:08,348] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:39:08,351] 44 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-21 20:39:08,351] 45 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "What is the purpose of the i/o subsystem in the operating system?",
+        "options": {
+            "a": "To manage the CPU scheduling",
+            "b": "To separate the kernel from managing i/o devices",
+            "c": "To execute user programs",
+            "d": "To handle memory management"
+        },
+        "correct": "b"
+    },
+    "2": {
+        "mcq": "Which of the following is NOT a type of computer virus?",
+        "options": {
+            "a": "Trojan horse",
+            "b": "Stealth virus",
+            "c": "Spyware",
+            "d": "Worm"
+        },
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "What is the main purpose of an access matrix in system protection?",
+        "options": {
+            "a": "To track file locations",
+            "b": "To manage user passwords",
+            "c": "To control access rights to objects",
+            "d": "To schedule disk I/O"
+        },
+        "correct": "c"
+    },
+    "4": {
+        "mcq": "What is the primary function of a device driver in the i/o subsystem?",
+        "options": {
+            "a": "To manage memory allocation",
+            "b": "To provide a uniform device access interface",
+            "c": "To control the CPU",
+            "d": "To handle network communication"
+        },
+        "correct": "b"
+    },
+    "5": {
+        "mcq": "Which of the following is a characteristic of a Trojan horse virus?",
+        "options": {
+            "a": "Self-replicating",
+            "b": "Hides as a harmless program",
+            "c": "Modifies source code",
+            "d": "Infects the boot sector"
+        },
+        "correct": "b"
+    },
+    "6": {
+        "mcq": "What is the main purpose of the inverted page table in virtual memory management?",
+        "options": {
+            "a": "To track disk sectors",
+            "b": "To map logical pages to physical frames",
+            "c": "To manage file directories",
+            "d": "To schedule CPU processes"
+        },
+        "correct": "b"
+    },
+    "7": {
+        "mcq": "Which disk scheduling algorithm is known for avoiding Belady's anomaly?",
+        "options": {
+            "a": "First come first served (FCFS)",
+            "b": "Shortest-seek-time-first (SSTF)",
+            "c": "SCAN scheduling",
+            "d": "C-SCAN scheduling"
+        },
+        "correct": "b"
+    },
+    "8": {
+        "mcq": "What is the purpose of a counting based page replacement algorithm in memory management?",
+        "options": {
+            "a": "To enhance file organization",
+            "b": "To manage disk formatting",
+            "c": "To replace pages based on frequency of use",
+            "d": "To control access rights"
+        },
+        "correct": "c"
+    },
+    "9": {
+        "mcq": "What is the function of a Trap door in system protection and security?",
+        "options": {
+            "a": "Performs encryption",
+            "b": "Monitors network traffic",
+            "c": "Provides a hidden entry point",
+            "d": "Manages disk I/O"
+        },
+        "correct": "c"
+    },
+    "10": {
+        "mcq": "In the context of i/o devices, what is the purpose of a port?",
+        "options": {
+            "a": "To store data temporarily",
+            "b": "To control the CPU",
+            "c": "To provide a connection point for devices",
+            "d": "To handle network communication"
+        },
+        "correct": "c"
+    }
+}

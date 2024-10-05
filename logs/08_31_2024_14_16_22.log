@@ -1,0 +1,153 @@
+[2024-08-31 14:16:35,188] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:16:36,421] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:16:36,423] 64 root - INFO - Total tokens:5893
+[2024-08-31 14:16:36,423] 65 root - INFO - Prompt tokens:5515
+[2024-08-31 14:16:36,423] 66 root - INFO - Completion tokens:378
+[2024-08-31 14:16:36,423] 67 root - INFO - Total cost:0.0090285
+[2024-08-31 14:16:36,423] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When events after the reporting period indicate a decline in fair value of investments", "b": "When events after the reporting period are non-adjusting events", "c": "When events after the reporting period are adjusting events", "d": "When events after the reporting period are disclosed"}, "correct": "c"}, "2": {"mcq": "What does the term 'Events after the reporting period' refer to in Ind AS 10?", "options": {"a": "Any event that affects the financial statements before the reporting period", "b": "Any event that occurs after the financial statements are approved for issue", "c": "Any event that occurs between the end of the reporting period and the date when financial statements are approved for issue", "d": "Any event that leads to a decline in fair value of investments"}, "correct": "c"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At the carrying amount of the assets to be distributed", "b": "At the historical cost of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the book value of the assets to be distributed"}, "correct": "c"}}
+[2024-08-31 14:16:36,434] 26 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When events after the reporting period indicate a decline in fair value of investments", "b": "When events after the reporting period are non-adjusting events", "c": "When events after the reporting period are adjusting events", "d": "When events after the reporting period are disclosed"}, "correct": "c"}, "2": {"mcq": "What does the term 'Events after the reporting period' refer to in Ind AS 10?", "options": {"a": "Any event that affects the financial statements before the reporting period", "b": "Any event that occurs after the financial statements are approved for issue", "c": "Any event that occurs between the end of the reporting period and the date when financial statements are approved for issue", "d": "Any event that leads to a decline in fair value of investments"}, "correct": "c"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At the carrying amount of the assets to be distributed", "b": "At the historical cost of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the book value of the assets to be distributed"}, "correct": "c"}}
+[2024-08-31 14:16:36,434] 27 root - INFO - Question type: MCQ
+[2024-08-31 14:16:36,434] 62 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-31 14:16:36,434] 63 root - ERROR - quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When events after the reporting period indicate a decline in fair value of investments", "b": "When events after the reporting period are non-adjusting events", "c": "When events after the reporting period are adjusting events", "d": "When events after the reporting period are disclosed"}, "correct": "c"}, "2": {"mcq": "What does the term 'Events after the reporting period' refer to in Ind AS 10?", "options": {"a": "Any event that affects the financial statements before the reporting period", "b": "Any event that occurs after the financial statements are approved for issue", "c": "Any event that occurs between the end of the reporting period and the date when financial statements are approved for issue", "d": "Any event that leads to a decline in fair value of investments"}, "correct": "c"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At the carrying amount of the assets to be distributed", "b": "At the historical cost of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the book value of the assets to be distributed"}, "correct": "c"}}
+[2024-08-31 14:16:36,435] 79 root - ERROR - get_document_data returned empty string
+[2024-08-31 14:17:49,815] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:17:54,051] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:17:54,053] 64 root - INFO - Total tokens:6235
+[2024-08-31 14:17:54,053] 65 root - INFO - Prompt tokens:5502
+[2024-08-31 14:17:54,053] 66 root - INFO - Completion tokens:733
+[2024-08-31 14:17:54,053] 67 root - INFO - Total cost:0.0012651
+[2024-08-31 14:17:54,053] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+  "1": {
+    "mcq": "According to Ind AS 10, what constitutes an adjusting event after the reporting period?",
+    "options": {
+      "a": "A decline in the fair value of investments after the reporting period",
+      "b": "The settlement of a court case that confirms a present obligation at the end of the reporting period",
+      "c": "The announcement of a plan to discontinue an operation",
+      "d": "Major purchases of assets after the reporting period"
+    },
+    "correct": "b"
+  },
+  "2": {
+    "mcq": "In the context of Ind AS 10, when should an entity recognize dividends as a liability?",
+    "options": {
+      "a": "When the dividend is declared by the management",
+      "b": "When the dividend is approved by the shareholders",
+      "c": "When the dividend is appropriately authorized and is no longer at the discretion of the entity",
+      "d": "At the end of the reporting period"
+    },
+    "correct": "c"
+  },
+  "3": {
+    "mcq": "What must an entity disclose if it has non-adjusting events after the reporting period that are material?",
+    "options": {
+      "a": "The financial effect of the events",
+      "b": "The nature of the event and an estimate of its financial effect",
+      "c": "The impact on future profitability",
+      "d": "The rationale behind the decisions made"
+    },
+    "correct": "b"
+  }
+}
+[2024-08-31 14:17:54,053] 26 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+  "1": {
+    "mcq": "According to Ind AS 10, what constitutes an adjusting event after the reporting period?",
+    "options": {
+      "a": "A decline in the fair value of investments after the reporting period",
+      "b": "The settlement of a court case that confirms a present obligation at the end of the reporting period",
+      "c": "The announcement of a plan to discontinue an operation",
+      "d": "Major purchases of assets after the reporting period"
+    },
+    "correct": "b"
+  },
+  "2": {
+    "mcq": "In the context of Ind AS 10, when should an entity recognize dividends as a liability?",
+    "options": {
+      "a": "When the dividend is declared by the management",
+      "b": "When the dividend is approved by the shareholders",
+      "c": "When the dividend is appropriately authorized and is no longer at the discretion of the entity",
+      "d": "At the end of the reporting period"
+    },
+    "correct": "c"
+  },
+  "3": {
+    "mcq": "What must an entity disclose if it has non-adjusting events after the reporting period that are material?",
+    "options": {
+      "a": "The financial effect of the events",
+      "b": "The nature of the event and an estimate of its financial effect",
+      "c": "The impact on future profitability",
+      "d": "The rationale behind the decisions made"
+    },
+    "correct": "b"
+  }
+}
+[2024-08-31 14:17:54,054] 27 root - INFO - Question type: MCQ
+[2024-08-31 14:17:54,054] 62 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-31 14:17:54,054] 63 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+  "1": {
+    "mcq": "According to Ind AS 10, what constitutes an adjusting event after the reporting period?",
+    "options": {
+      "a": "A decline in the fair value of investments after the reporting period",
+      "b": "The settlement of a court case that confirms a present obligation at the end of the reporting period",
+      "c": "The announcement of a plan to discontinue an operation",
+      "d": "Major purchases of assets after the reporting period"
+    },
+    "correct": "b"
+  },
+  "2": {
+    "mcq": "In the context of Ind AS 10, when should an entity recognize dividends as a liability?",
+    "options": {
+      "a": "When the dividend is declared by the management",
+      "b": "When the dividend is approved by the shareholders",
+      "c": "When the dividend is appropriately authorized and is no longer at the discretion of the entity",
+      "d": "At the end of the reporting period"
+    },
+    "correct": "c"
+  },
+  "3": {
+    "mcq": "What must an entity disclose if it has non-adjusting events after the reporting period that are material?",
+    "options": {
+      "a": "The financial effect of the events",
+      "b": "The nature of the event and an estimate of its financial effect",
+      "c": "The impact on future profitability",
+      "d": "The rationale behind the decisions made"
+    },
+    "correct": "b"
+  }
+}
+[2024-08-31 14:17:54,054] 79 root - ERROR - get_document_data returned empty string
+[2024-08-31 14:20:23,877] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:20:25,545] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:20:25,548] 64 root - INFO - Total tokens:5825
+[2024-08-31 14:20:25,548] 65 root - INFO - Prompt tokens:5454
+[2024-08-31 14:20:25,548] 66 root - INFO - Completion tokens:371
+[2024-08-31 14:20:25,548] 67 root - INFO - Total cost:0.008923
+[2024-08-31 14:20:25,548] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When shareholders approve the financial statements", "b": "When the financial statements are made available to shareholders", "c": "When the financial statements are approved for issue by the Board of Directors", "d": "When the financial statements are filed with a regulatory body"}, "correct": "c"}, "2": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At historical cost", "b": "At fair value of the assets to be distributed", "c": "At net realizable value", "d": "At book value of the assets"}, "correct": "b"}, "3": {"mcq": "What type of events after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Routine operational events", "b": "Significant non-adjusting events", "c": "Minor business transactions", "d": "Internal employee matters"}, "correct": "b"}}
+[2024-08-31 14:20:25,548] 26 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When shareholders approve the financial statements", "b": "When the financial statements are made available to shareholders", "c": "When the financial statements are approved for issue by the Board of Directors", "d": "When the financial statements are filed with a regulatory body"}, "correct": "c"}, "2": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At historical cost", "b": "At fair value of the assets to be distributed", "c": "At net realizable value", "d": "At book value of the assets"}, "correct": "b"}, "3": {"mcq": "What type of events after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Routine operational events", "b": "Significant non-adjusting events", "c": "Minor business transactions", "d": "Internal employee matters"}, "correct": "b"}}
+[2024-08-31 14:20:25,548] 27 root - INFO - Question type: MCQ
+[2024-08-31 14:20:25,548] 62 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-31 14:20:25,548] 63 root - ERROR - quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When shareholders approve the financial statements", "b": "When the financial statements are made available to shareholders", "c": "When the financial statements are approved for issue by the Board of Directors", "d": "When the financial statements are filed with a regulatory body"}, "correct": "c"}, "2": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At historical cost", "b": "At fair value of the assets to be distributed", "c": "At net realizable value", "d": "At book value of the assets"}, "correct": "b"}, "3": {"mcq": "What type of events after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Routine operational events", "b": "Significant non-adjusting events", "c": "Minor business transactions", "d": "Internal employee matters"}, "correct": "b"}}
+[2024-08-31 14:20:25,548] 79 root - ERROR - get_document_data returned empty string
+[2024-08-31 14:35:52,941] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:35:54,354] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:35:54,356] 64 root - INFO - Total tokens:5797
+[2024-08-31 14:35:54,356] 65 root - INFO - Prompt tokens:5447
+[2024-08-31 14:35:54,356] 66 root - INFO - Completion tokens:350
+[2024-08-31 14:35:54,356] 67 root - INFO - Total cost:0.0088705
+[2024-08-31 14:35:54,356] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?", "options": {"a": "To adjust financial statements for tax purposes", "b": "To provide information to management for decision-making", "c": "To determine profit and loss for a period", "d": "To disclose events after the reporting period"}, "correct": "d"}, "2": {"mcq": "When should an entity recognise a dividend payable for non-cash asset distributions?", "options": {"a": "At the end of the reporting period", "b": "When the dividend is declared by management", "c": "When shareholders approve the financial statements", "d": "When the assets are distributed"}, "correct": "b"}, "3": {"mcq": "What is the consequence of settling a dividend payable with non-cash assets at a value different from the carrying amount of the dividend?", "options": {"a": "Recognise a liability in equity", "b": "Recognise the difference in profit or loss", "c": "No accounting treatment required", "d": "Adjust the carrying amount of the assets"}, "correct": "b"}}
+[2024-08-31 14:35:54,356] 26 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?", "options": {"a": "To adjust financial statements for tax purposes", "b": "To provide information to management for decision-making", "c": "To determine profit and loss for a period", "d": "To disclose events after the reporting period"}, "correct": "d"}, "2": {"mcq": "When should an entity recognise a dividend payable for non-cash asset distributions?", "options": {"a": "At the end of the reporting period", "b": "When the dividend is declared by management", "c": "When shareholders approve the financial statements", "d": "When the assets are distributed"}, "correct": "b"}, "3": {"mcq": "What is the consequence of settling a dividend payable with non-cash assets at a value different from the carrying amount of the dividend?", "options": {"a": "Recognise a liability in equity", "b": "Recognise the difference in profit or loss", "c": "No accounting treatment required", "d": "Adjust the carrying amount of the assets"}, "correct": "b"}}
+[2024-08-31 14:35:54,357] 27 root - INFO - Question type: MCQ
+[2024-08-31 14:35:54,357] 64 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-31 14:35:54,357] 65 root - ERROR - quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?", "options": {"a": "To adjust financial statements for tax purposes", "b": "To provide information to management for decision-making", "c": "To determine profit and loss for a period", "d": "To disclose events after the reporting period"}, "correct": "d"}, "2": {"mcq": "When should an entity recognise a dividend payable for non-cash asset distributions?", "options": {"a": "At the end of the reporting period", "b": "When the dividend is declared by management", "c": "When shareholders approve the financial statements", "d": "When the assets are distributed"}, "correct": "b"}, "3": {"mcq": "What is the consequence of settling a dividend payable with non-cash assets at a value different from the carrying amount of the dividend?", "options": {"a": "Recognise a liability in equity", "b": "Recognise the difference in profit or loss", "c": "No accounting treatment required", "d": "Adjust the carrying amount of the assets"}, "correct": "b"}}
+[2024-08-31 14:35:54,358] 79 root - ERROR - get_document_data returned empty string

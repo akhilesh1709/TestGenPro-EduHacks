@@ -1,0 +1,162 @@
+[2024-08-21 20:34:43,616] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:34:45,482] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:34:45,485] 44 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-21 20:34:45,485] 45 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "Which of the following is NOT a responsibility of the i/o subsystem?",
+        "options": {
+            "a": "Managing i/o devices",
+            "b": "Handling i/o scheduling",
+            "c": "Buffering data",
+            "d": "Executing processing tasks"
+        },
+        "correct": "d"
+    },
+    "2": {
+        "mcq": "What is the main purpose of the access matrix in system protection?",
+        "options": {
+            "a": "To manage file permissions",
+            "b": "To store user passwords",
+            "c": "To specify which resources a process can access",
+            "d": "To encrypt system data"
+        },
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "What type of computer threat disguises itself as a harmless program but performs harmful actions?",
+        "options": {
+            "a": "Logic bomb",
+            "b": "Trojan horse",
+            "c": "Virus",
+            "d": "Worm"
+        },
+        "correct": "b"
+    },
+    "4": {
+        "mcq": "Which of the following is a characteristic of a polymorphic computer virus?",
+        "options": {
+            "a": "Infects the boot sector",
+            "b": "Changes on copying each time",
+            "c": "Searches and modifies source codes",
+            "d": "Avoids detection by modifying system parts"
+        },
+        "correct": "b"
+    },
+    "5": {
+        "mcq": "What is the purpose of a tunneling virus?",
+        "options": {
+            "a": "Infects multiple parts of the system",
+            "b": "Installs itself in interrupt service routines",
+            "c": "Modifies high-level language files",
+            "d": "Initiates an attack under specific conditions"
+        },
+        "correct": "b"
+    },
+    "6": {
+        "mcq": "Which disk scheduling algorithm uses an elevator-like approach for efficiency?",
+        "options": {
+            "a": "SCAN",
+            "b": "LOOK",
+            "c": "C-SCAN",
+            "d": "C-LOOK"
+        },
+        "correct": "a"
+    },
+    "7": {
+        "mcq": "What is the main purpose of demand paging in virtual memory management?",
+        "options": {
+            "a": "To load all pages into memory at once",
+            "b": "To load pages into memory only when needed",
+            "c": "To swap processes in and out of memory",
+            "d": "To prevent system thrashing"
+        },
+        "correct": "b"
+    },
+    "8": {
+        "mcq": "Which page replacement algorithm is known for having no Belady's anomaly?",
+        "options": {
+            "a": "First come first served (FCFS)",
+            "b": "Optimal",
+            "c": "Least-recently used (LRU)",
+            "d": "Counting based"
+        },
+        "correct": "c"
+    },
+    "9": {
+        "mcq": "What is the function of a logical block in disk storage?",
+        "options": {
+            "a": "Smallest unit of transfer between disk and bus",
+            "b": "Division of a track into parts",
+            "c": "Set of tracks at one arm position",
+            "d": "Physical layer of a disk platter"
+        },
+        "correct": "a"
+    },
+    "10": {
+        "mcq": "In the context of file systems, what does a directory represent?",
+        "options": {
+            "a": "A set of related files",
+            "b": "A logical construct for managing files",
+            "c": "A physical location on disk",
+            "d": "A type of file format"
+        },
+        "correct": "b"
+    }
+}
+[2024-08-21 20:35:47,829] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:35:50,718] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:35:50,720] 44 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-21 20:35:50,720] 45 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "What is the purpose of the i/o subsystem in the kernel?",
+        "options": {"a": "To manage the complexities of managing i/o devices", "b": "To handle processing tasks", "c": "To provide a user interface for i/o devices", "d": "To control the memory management unit"},
+        "correct": "a"
+    },
+    "2": {
+        "mcq": "Which of the following is NOT a type of device?",
+        "options": {"a": "Storage devices", "b": "Transmission devices", "c": "Processing devices", "d": "Human-interface devices"},
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "What is the main responsibility of an operating system in terms of security?",
+        "options": {"a": "To prevent internal errors", "b": "To protect against external threats", "c": "To ensure hardware compatibility", "d": "To provide user-friendly interfaces"},
+        "correct": "b"
+    },
+    "4": {
+        "mcq": "Which of the following is a common threat to computer security?",
+        "options": {"a": "Trojan horse", "b": "Antivirus software", "c": "Computer maintenance tools", "d": "System updates"},
+        "correct": "a"
+    },
+    "5": {
+        "mcq": "What type of computer virus infects the boot sector of a computer?",
+        "options": {"a": "File virus", "b": "Memory virus", "c": "Boot virus", "d": "Macro virus"},
+        "correct": "c"
+    },
+    "6": {
+        "mcq": "In the context of i/o management, what is the purpose of a device driver?",
+        "options": {"a": "To manage the complexities of managing i/o devices", "b": "To provide a user interface for i/o devices", "c": "To provide a uniform device access interface to the i/o subsystem", "d": "To handle processing tasks"},
+        "correct": "c"
+    },
+    "7": {
+        "mcq": "Which of the following is NOT a property of devices?",
+        "options": {"a": "Character-stream versus block", "b": "Sequential access versus random access", "c": "Non-sharable versus dedicated", "d": "Uninterrupted versus interrupted"},
+        "correct": "d"
+    },
+    "8": {
+        "mcq": "What is the purpose of a file system in an operating system?",
+        "options": {"a": "To manage the complexities of memory management", "b": "To provide a way to access i/o devices", "c": "To allow data to be stored, located, and retrieved easily", "d": "To control the CPU scheduling"},
+        "correct": "c"
+    },
+    "9": {
+        "mcq": "Which of the following is a common characteristic of a worm in terms of computer security?",
+        "options": {"a": "Self-replicating and infectious", "b": "Requires human intervention to spread", "c": "Only affects files", "d": "Cannot modify executable programs"},
+        "correct": "a"
+    },
+    "10": {
+        "mcq": "What is the purpose of the access matrix in system protection?",
+        "options": {"a": "To keep track of working sets", "b": "To manage the complexities of device drivers", "c": "To specify which resources a process can access", "d": "To control the CPU utilization"},
+        "correct": "c"
+    }
+}

@@ -1,0 +1,459 @@
+[2024-08-31 13:00:52,283] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:52,474] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:00:54,246] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:54,247] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:00:57,523] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:57,529] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:00:59,365] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:59,373] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:00:59,568] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:59,576] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:00:59,791] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:00:59,791] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:01:01,305] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:01:01,313] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:01:10,173] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:01:10,177] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+
+[2024-08-31 13:01:11,240] 72 root - ERROR - An error occurred: PyCryptodome is required for AES algorithm
+[2024-08-31 13:01:11,244] 73 root - ERROR - Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 11, in read_file
+    for page in pdf_reader.pages:
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2081, in __iter__
+    for i in range(len(self)):
+                   ^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_page.py", line 2063, in __len__
+    return self.length_function()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 445, in _get_num_pages
+    return self.trailer[TK.ROOT]["/Pages"]["/Count"]  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_data_structures.py", line 266, in __getitem__
+    return dict.__getitem__(self, key).get_object()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1205, in get_object
+    retval = self._get_object_from_stream(indirect_reference)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1136, in _get_object_from_stream
+    obj_stm: EncodedStreamObject = IndirectObject(stmnum, 0, self).get_object()  # type: ignore
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\generic\_base.py", line 259, in get_object
+    obj = self.pdf.get_object(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_reader.py", line 1269, in get_object
+    retval = self._encryption.decrypt_object(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 761, in decrypt_object
+    return cf.decrypt_object(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 185, in decrypt_object
+    obj._data = self.stmCrypt.decrypt(obj._data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TSA\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyPDF2\_encryption.py", line 147, in decrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mcqgenerator - CA\app.py", line 34, in <module>
+    text = read_file(uploaded_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mcqgenerator - CA\src\mcqgenerator\utils.py", line 16, in read_file
+    raise Exception(e)
+Exception: PyCryptodome is required for AES algorithm
+

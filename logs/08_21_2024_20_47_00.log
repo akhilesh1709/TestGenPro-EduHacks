@@ -1,0 +1,106 @@
+[2024-08-21 20:47:42,458] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:47:44,262] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-21 20:47:44,266] 44 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-21 20:47:44,266] 45 root - ERROR - quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "What is the purpose of a file system?",
+        "options": {
+            "a": "To manage hardware devices",
+            "b": "To allow execution of programs not completely in memory",
+            "c": "To provide a logical storage for related information",
+            "d": "To schedule processes efficiently"
+        },
+        "correct": "c"
+    },
+    "2": {
+        "mcq": "Which of the following is a responsibility of the i/o subsystem?",
+        "options": {
+            "a": "Managing the CPU",
+            "b": "Handling storage management",
+            "c": "Handling complexities of managing i/o devices",
+            "d": "Executing processes"
+        },
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "Which of the following is a threat to system security?",
+        "options": {
+            "a": "Trojan horse",
+            "b": "Hardware failure",
+            "c": "Software update",
+            "d": "Data backup"
+        },
+        "correct": "a"
+    },
+    "4": {
+        "mcq": "What is the purpose of a domain in system protection?",
+        "options": {
+            "a": "To manage hardware devices",
+            "b": "To specify the resources a process can access",
+            "c": "To handle i/o devices",
+            "d": "To schedule processes efficiently"
+        },
+        "correct": "b"
+    },
+    "5": {
+        "mcq": "Which type of computer virus remains hidden to avoid detection?",
+        "options": {
+            "a": "File/parasitic virus",
+            "b": "Macro virus",
+            "c": "Stealth virus",
+            "d": "Polymorphic virus"
+        },
+        "correct": "c"
+    },
+    "6": {
+        "mcq": "What is the main purpose of the i/o subsystem in an operating system?",
+        "options": {
+            "a": "To manage memory allocation",
+            "b": "To handle the complexities of managing i/o devices",
+            "c": "To execute user programs",
+            "d": "To provide security to the system"
+        },
+        "correct": "b"
+    },
+    "7": {
+        "mcq": "Which of the following is a responsibility of the file system?",
+        "options": {
+            "a": "To manage the CPU",
+            "b": "To control i/o devices",
+            "c": "To provide a logical storage for related information",
+            "d": "To execute processes"
+        },
+        "correct": "c"
+    },
+    "8": {
+        "mcq": "What is the purpose of a device driver in the i/o subsystem?",
+        "options": {
+            "a": "To manage the CPU",
+            "b": "To handle storage management",
+            "c": "To provide a uniform device access interface",
+            "d": "To provide security to the system"
+        },
+        "correct": "c"
+    },
+    "9": {
+        "mcq": "Which of the following is a threat to system security?",
+        "options": {
+            "a": "Logic bomb",
+            "b": "Software update",
+            "c": "Data backup",
+            "d": "Hardware malfunction"
+        },
+        "correct": "a"
+    },
+    "10": {
+        "mcq": "What is the purpose of an access matrix in system protection?",
+        "options": {
+            "a": "To handle i/o devices",
+            "b": "To manage hardware devices",
+            "c": "To specify the resources a process can access",
+            "d": "To execute user programs"
+        },
+        "correct": "c"
+    }
+}

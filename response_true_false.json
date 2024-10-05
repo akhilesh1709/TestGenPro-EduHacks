@@ -1,0 +1,14 @@
+{
+    "1": {
+        "question": "Statement to check if true or false",
+        "correct": "true/false"
+    },
+    "2": {
+        "question": "Statement to check if true or false",
+        "correct": "true/false"
+    },
+    "3": {
+        "question": "Statement to check if true or false",
+        "correct": "true/false"
+    }
+}

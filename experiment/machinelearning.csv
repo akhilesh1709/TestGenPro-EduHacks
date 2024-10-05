@@ -1,0 +1,14 @@
+MCQ,Choices,Correct
+<<<<<<< HEAD
+What is the goal of supervised learning in machine learning?,a: To learn the underlying structure of data | b: To make predictions on unseen data based on labeled data | c: To interact with an environment and maximize cumulative rewards | d: To automate the model selection process,b
+Which type of learning involves training on data without labeled responses?,a: Supervised Learning | b: Unsupervised Learning | c: Reinforcement Learning | d: Feature Engineering,b
+What is the purpose of feature engineering in machine learning?,"a: To automate the model selection process | b: To make predictions on unseen data | c: To select, modify, or create new variables from raw data | d: To maximize cumulative rewards",c
+Which machine learning algorithm is used for classification tasks by splitting data into branches based on feature values?,a: Linear Regression | b: Decision Trees | c: Support Vector Machines | d: Neural Networks,b
+In which industry can machine learning be used for predicting patient outcomes and disease diagnosis?,a: Retail | b: Transportation | c: Healthcare | d: Marketing,c
+=======
+What is the goal of supervised learning?,a: To learn from data without labeled responses | b: To make predictions on unseen data based on labeled data | c: To interact with an environment and maximize rewards | d: To cluster similar data points,b
+Which type of machine learning involves training on data without labeled responses?,a: Supervised Learning | b: Unsupervised Learning | c: Reinforcement Learning | d: Feature Engineering,b
+What is the purpose of feature engineering in machine learning?,"a: To make predictions on unseen data | b: To adjust the parameters of the model using a training dataset | c: To select, modify, or create new variables from raw data to help the model make better predictions | d: To find the hyperplane that best separates different classes in the data",c
+Which algorithm is used for classification and regression tasks by splitting data into branches based on feature values?,a: Linear Regression | b: Decision Trees | c: Support Vector Machines (SVM) | d: Neural Networks,b
+"In which industry can machine learning be used for fraud detection, credit scoring, and risk management?",a: Healthcare | b: Retail | c: Finance | d: Transportation,c
+>>>>>>> b93346b5d1bbd5e425d7e6398df12bd2b6caf845

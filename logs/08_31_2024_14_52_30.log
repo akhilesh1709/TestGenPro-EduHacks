@@ -1,0 +1,1263 @@
+[2024-08-31 14:52:42,657] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:52:43,923] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:52:43,926] 64 root - INFO - Total tokens:5790
+[2024-08-31 14:52:43,926] 65 root - INFO - Prompt tokens:5467
+[2024-08-31 14:52:43,926] 66 root - INFO - Completion tokens:323
+[2024-08-31 14:52:43,926] 67 root - INFO - Total cost:0.0088465
+[2024-08-31 14:52:43,926] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "Which events should an entity adjust its financial statements for, according to Indian Accounting Standard 10?", "options": {"a": "Non-adjusting events after the reporting period only", "b": "Adjusting events after the reporting period only", "c": "Both adjusting and non-adjusting events after the reporting period", "d": "Events before the reporting period"}, "correct": "c"}, "2": {"mcq": "When should an entity recognise a dividend payable according to Appendix A of Ind AS 10?", "options": {"a": "When the dividend is declared by management or the board of directors", "b": "When the dividend is paid to shareholders", "c": "When the financial statements are approved for issue", "d": "When the entity receives non-cash assets"}, "correct": "a"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners?", "options": {"a": "At the historical cost of the assets", "b": "At the carrying amount of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the market value of the assets"}, "correct": "c"}}
+[2024-08-31 14:52:43,927] 26 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "Which events should an entity adjust its financial statements for, according to Indian Accounting Standard 10?", "options": {"a": "Non-adjusting events after the reporting period only", "b": "Adjusting events after the reporting period only", "c": "Both adjusting and non-adjusting events after the reporting period", "d": "Events before the reporting period"}, "correct": "c"}, "2": {"mcq": "When should an entity recognise a dividend payable according to Appendix A of Ind AS 10?", "options": {"a": "When the dividend is declared by management or the board of directors", "b": "When the dividend is paid to shareholders", "c": "When the financial statements are approved for issue", "d": "When the entity receives non-cash assets"}, "correct": "a"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners?", "options": {"a": "At the historical cost of the assets", "b": "At the carrying amount of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the market value of the assets"}, "correct": "c"}}
+[2024-08-31 14:52:43,927] 27 root - INFO - Question type: MCQ
+[2024-08-31 14:52:43,927] 62 root - ERROR - Error decoding JSON: Expecting value: line 1 column 1 (char 0)
+[2024-08-31 14:52:43,927] 63 root - ERROR - quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "Which events should an entity adjust its financial statements for, according to Indian Accounting Standard 10?", "options": {"a": "Non-adjusting events after the reporting period only", "b": "Adjusting events after the reporting period only", "c": "Both adjusting and non-adjusting events after the reporting period", "d": "Events before the reporting period"}, "correct": "c"}, "2": {"mcq": "When should an entity recognise a dividend payable according to Appendix A of Ind AS 10?", "options": {"a": "When the dividend is declared by management or the board of directors", "b": "When the dividend is paid to shareholders", "c": "When the financial statements are approved for issue", "d": "When the entity receives non-cash assets"}, "correct": "a"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners?", "options": {"a": "At the historical cost of the assets", "b": "At the carrying amount of the assets to be distributed", "c": "At the fair value of the assets to be distributed", "d": "At the market value of the assets"}, "correct": "c"}}
+[2024-08-31 14:52:43,928] 80 root - ERROR - get_document_data returned empty string
+[2024-08-31 14:55:36,159] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:55:37,487] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:55:37,489] 64 root - INFO - Total tokens:5812
+[2024-08-31 14:55:37,489] 65 root - INFO - Prompt tokens:5464
+[2024-08-31 14:55:37,489] 66 root - INFO - Completion tokens:348
+[2024-08-31 14:55:37,489] 67 root - INFO - Total cost:0.008892
+[2024-08-31 14:55:37,489] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "What is the primary objective of Indian Accounting Standard 10 (Ind AS 10)?", "options": {"a": "To ensure accurate tax reporting", "b": "To provide information to management for decision-making", "c": "To determine profit and loss for a period", "d": "To prescribe when to adjust financial statements for events after the reporting period and the disclosures to be made"}, "correct": "d"}, "2": {"mcq": "When should an entity adjust its financial statements for adjusting events after the reporting period?", "options": {"a": "When shareholders approve the financial statements", "b": "When the management approves the financial statements for issue", "c": "When the financial statements are made available to shareholders", "d": "When the financial statements are approved for issue"}, "correct": "d"}, "3": {"mcq": "Which of the following events would generally result in disclosure as a non-adjusting event after the reporting period?", "options": {"a": "Major ordinary share transactions", "b": "Discovery of fraud or errors in financial statements", "c": "Settlement of a court case confirming a present obligation", "d": "Entering into significant commitments or contingent liabilities"}, "correct": "a"}}
+[2024-08-31 14:55:37,489] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "What is the primary objective of Indian Accounting Standard 10 (Ind AS 10)?", "options": {"a": "To ensure accurate tax reporting", "b": "To provide information to management for decision-making", "c": "To determine profit and loss for a period", "d": "To prescribe when to adjust financial statements for events after the reporting period and the disclosures to be made"}, "correct": "d"}, "2": {"mcq": "When should an entity adjust its financial statements for adjusting events after the reporting period?", "options": {"a": "When shareholders approve the financial statements", "b": "When the management approves the financial statements for issue", "c": "When the financial statements are made available to shareholders", "d": "When the financial statements are approved for issue"}, "correct": "d"}, "3": {"mcq": "Which of the following events would generally result in disclosure as a non-adjusting event after the reporting period?", "options": {"a": "Major ordinary share transactions", "b": "Discovery of fraud or errors in financial statements", "c": "Settlement of a court case confirming a present obligation", "d": "Entering into significant commitments or contingent liabilities"}, "correct": "a"}}
+[2024-08-31 14:55:37,489] 33 root - INFO - Question type: MCQ
+[2024-08-31 14:55:37,489] 68 root - INFO - Generated document data: 1. What is the primary objective of Indian Accounting Standard 10 (Ind AS 10)?
+   a. To ensure accurate tax reporting
+   b. To provide information to management for decision-making
+   c. To determine profit and loss for a period
+   d. To prescribe when to adjust financial statements for events after the reporting period and the disclosures to be made
+   Correct Answer: d
+
+2. When should an entity adjust its financial statements for adjusting events after the reporting period?
+   a. When shareholders approve the financial statements
+   b. When the management approves the financial statements for issue
+   c. When the financial statements are made available to shareholders
+   d. When the financial statements are approved for issue
+   Correct Answer: d
+
+3. Which of the following events would generally result in disclosure as a non-adjusting event after the reporting period?
+   a. Major ordinary share transactions
+   b. Discovery of fraud or errors in financial statements
+   c. Settlement of a court case confirming a present obligation
+   d. Entering into significant commitments or contingent liabilities
+   Correct Answer: a
+
+
+[2024-08-31 14:56:17,549] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:56:19,141] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:56:19,143] 64 root - INFO - Total tokens:5861
+[2024-08-31 14:56:19,143] 65 root - INFO - Prompt tokens:5465
+[2024-08-31 14:56:19,143] 66 root - INFO - Completion tokens:396
+[2024-08-31 14:56:19,143] 67 root - INFO - Total cost:0.008989500000000001
+[2024-08-31 14:56:19,143] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "When should an entity adjust its financial statements for events after the reporting period according to Indian Accounting Standard 10?", "choices": ["When the events provide additional evidence about conditions that existed at the end of the reporting period", "When the events indicate conditions that arose after the reporting period", "Both a and b", "None of the above"], "correct": "Both a and b"}, "2": {"question": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "choices": ["At the historical cost of the assets to be distributed", "At the fair value of the assets to be distributed", "At the book value of the assets to be distributed", "At the market value of the assets to be distributed"], "correct": "At the fair value of the assets to be distributed"}, "3": {"question": "If an entity declares dividends to holders of equity instruments after the reporting period, how should those dividends be recognized according to Ind AS 10?", "choices": ["Recognized as a liability at the end of the reporting period", "Recognized as revenue at the end of the reporting period", "Recognized as a liability when approved for issue", "Not recognized as a liability at the end of the reporting period"], "correct": "Not recognized as a liability at the end of the reporting period"}}
+[2024-08-31 14:56:19,143] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "When should an entity adjust its financial statements for events after the reporting period according to Indian Accounting Standard 10?", "choices": ["When the events provide additional evidence about conditions that existed at the end of the reporting period", "When the events indicate conditions that arose after the reporting period", "Both a and b", "None of the above"], "correct": "Both a and b"}, "2": {"question": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "choices": ["At the historical cost of the assets to be distributed", "At the fair value of the assets to be distributed", "At the book value of the assets to be distributed", "At the market value of the assets to be distributed"], "correct": "At the fair value of the assets to be distributed"}, "3": {"question": "If an entity declares dividends to holders of equity instruments after the reporting period, how should those dividends be recognized according to Ind AS 10?", "choices": ["Recognized as a liability at the end of the reporting period", "Recognized as revenue at the end of the reporting period", "Recognized as a liability when approved for issue", "Not recognized as a liability at the end of the reporting period"], "correct": "Not recognized as a liability at the end of the reporting period"}}
+[2024-08-31 14:56:19,143] 33 root - INFO - Question type: True/False
+[2024-08-31 14:56:19,143] 68 root - INFO - Generated document data: 1. When should an entity adjust its financial statements for events after the reporting period according to Indian Accounting Standard 10?
+   Correct Answer: Both a and b
+
+2. How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?
+   Correct Answer: At the fair value of the assets to be distributed
+
+3. If an entity declares dividends to holders of equity instruments after the reporting period, how should those dividends be recognized according to Ind AS 10?
+   Correct Answer: Not recognized as a liability at the end of the reporting period
+
+
+[2024-08-31 14:57:21,013] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:57:22,111] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 14:57:22,114] 64 root - INFO - Total tokens:6602
+[2024-08-31 14:57:22,114] 65 root - INFO - Prompt tokens:6019
+[2024-08-31 14:57:22,114] 66 root - INFO - Completion tokens:583
+[2024-08-31 14:57:22,114] 67 root - INFO - Total cost:0.0101945
+[2024-08-31 14:57:22,114] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 14:57:22,114] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 14:57:22,114] 33 root - INFO - Question type: Descriptive
+[2024-08-31 14:57:22,114] 68 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+   Sample Answer: 
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+   Sample Answer: 
+
+
+[2024-08-31 15:01:07,576] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:08,810] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:08,812] 64 root - INFO - Total tokens:6612
+[2024-08-31 15:01:08,812] 65 root - INFO - Prompt tokens:6019
+[2024-08-31 15:01:08,812] 66 root - INFO - Completion tokens:593
+[2024-08-31 15:01:08,812] 67 root - INFO - Total cost:0.0102145
+[2024-08-31 15:01:08,812] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:01:08,812] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:01:08,812] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:01:08,813] 71 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:01:20,248] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:21,302] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:21,304] 64 root - INFO - Total tokens:5795
+[2024-08-31 15:01:21,304] 65 root - INFO - Prompt tokens:5454
+[2024-08-31 15:01:21,304] 66 root - INFO - Completion tokens:341
+[2024-08-31 15:01:21,304] 67 root - INFO - Total cost:0.008863000000000001
+[2024-08-31 15:01:21,304] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a dividend payable for the distribution of non-cash assets to its owners according to Appendix A of Ind AS 10?", "options": ["When the dividend is declared by management or the board of directors", "When the assets are distributed to the owners", "When the fair value of the assets to be distributed is determined"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the consequence of a company determining after the reporting period that it intends to liquidate the entity or cease trading according to Ind AS 10?", "options": ["The financial statements will be adjusted for the new decision", "The financial statements will not be prepared on a going concern basis", "The financial statements will need to be re-audited"], "correct": "The financial statements will not be prepared on a going concern basis"}}
+[2024-08-31 15:01:21,304] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a dividend payable for the distribution of non-cash assets to its owners according to Appendix A of Ind AS 10?", "options": ["When the dividend is declared by management or the board of directors", "When the assets are distributed to the owners", "When the fair value of the assets to be distributed is determined"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the consequence of a company determining after the reporting period that it intends to liquidate the entity or cease trading according to Ind AS 10?", "options": ["The financial statements will be adjusted for the new decision", "The financial statements will not be prepared on a going concern basis", "The financial statements will need to be re-audited"], "correct": "The financial statements will not be prepared on a going concern basis"}}
+[2024-08-31 15:01:21,305] 33 root - INFO - Question type: True/False
+[2024-08-31 15:01:21,305] 71 root - INFO - Generated document data: 1. Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognize a dividend payable for the distribution of non-cash assets to its owners according to Appendix A of Ind AS 10?
+   Answer: When the dividend is declared by management or the board of directors
+
+3. What is the consequence of a company determining after the reporting period that it intends to liquidate the entity or cease trading according to Ind AS 10?
+   Answer: The financial statements will not be prepared on a going concern basis
+
+
+[2024-08-31 15:01:33,663] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:37,349] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:01:37,351] 64 root - INFO - Total tokens:6049
+[2024-08-31 15:01:37,351] 65 root - INFO - Prompt tokens:5471
+[2024-08-31 15:01:37,351] 66 root - INFO - Completion tokens:578
+[2024-08-31 15:01:37,351] 67 root - INFO - Total cost:0.0093625
+[2024-08-31 15:01:37,351] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "If the event is favorable for the entity", "b": "If the event is unfavorable for the entity", "c": "If the event is an adjusting event after the reporting period", "d": "If the event is a non-adjusting event after the reporting period"}, "correct": "c"}, "2": {"mcq": "What type of event after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Decline in fair value of investments", "b": "Increase in fair value of investments", "c": "Stable fair value of investments", "d": "No change in fair value of investments"}, "correct": "a"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At historical cost of the assets", "b": "At book value of the assets", "c": "At fair value of the assets to be distributed", "d": "At face value of the assets"}, "correct": "c"}}
+[2024-08-31 15:01:37,351] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "If the event is favorable for the entity", "b": "If the event is unfavorable for the entity", "c": "If the event is an adjusting event after the reporting period", "d": "If the event is a non-adjusting event after the reporting period"}, "correct": "c"}, "2": {"mcq": "What type of event after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Decline in fair value of investments", "b": "Increase in fair value of investments", "c": "Stable fair value of investments", "d": "No change in fair value of investments"}, "correct": "a"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At historical cost of the assets", "b": "At book value of the assets", "c": "At fair value of the assets to be distributed", "d": "At face value of the assets"}, "correct": "c"}}
+[2024-08-31 15:01:37,352] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:01:37,352] 71 root - INFO - Generated document data: 1. When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?
+   a. If the event is favorable for the entity
+   b. If the event is unfavorable for the entity
+   c. If the event is an adjusting event after the reporting period
+   d. If the event is a non-adjusting event after the reporting period
+   Correct Answer: c
+
+2. What type of event after the reporting period would generally result in disclosure according to Ind AS 10?
+   a. Decline in fair value of investments
+   b. Increase in fair value of investments
+   c. Stable fair value of investments
+   d. No change in fair value of investments
+   Correct Answer: a
+
+3. How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?
+   a. At historical cost of the assets
+   b. At book value of the assets
+   c. At fair value of the assets to be distributed
+   d. At face value of the assets
+   Correct Answer: c
+
+
+[2024-08-31 15:04:42,920] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:04:43,920] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:04:43,924] 64 root - INFO - Total tokens:5747
+[2024-08-31 15:04:43,924] 65 root - INFO - Prompt tokens:5431
+[2024-08-31 15:04:43,924] 66 root - INFO - Completion tokens:316
+[2024-08-31 15:04:43,924] 67 root - INFO - Total cost:0.008778500000000002
+[2024-08-31 15:04:43,924] 72 root - INFO - Received quiz: 
+### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a dividend payable for the distribution of non-cash assets to its owners?", "options": ["When the dividend is declared by management or the board of directors", "When the assets to be distributed are valued at a fair value", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the key consideration for an entity when giving owners a choice of receiving either a non-cash asset or a cash alternative as a dividend?", "options": ["The tax implications of the choice made by the owners", "The probability of owners selecting each alternative", "The total market value of the assets distributed"], "correct": "The probability of owners selecting each alternative"}}
+[2024-08-31 15:04:43,924] 32 root - INFO - Received quiz_str: 
+### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a dividend payable for the distribution of non-cash assets to its owners?", "options": ["When the dividend is declared by management or the board of directors", "When the assets to be distributed are valued at a fair value", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the key consideration for an entity when giving owners a choice of receiving either a non-cash asset or a cash alternative as a dividend?", "options": ["The tax implications of the choice made by the owners", "The probability of owners selecting each alternative", "The total market value of the assets distributed"], "correct": "The probability of owners selecting each alternative"}}
+[2024-08-31 15:04:43,924] 33 root - INFO - Question type: True/False
+[2024-08-31 15:04:43,924] 72 root - ERROR - Error decoding JSON: Expecting value: line 2 column 1 (char 1)
+[2024-08-31 15:04:43,924] 73 root - ERROR - Problematic JSON string: 
+### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a dividend payable for the distribution of non-cash assets to its owners?", "options": ["When the dividend is declared by management or the board of directors", "When the assets to be distributed are valued at a fair value", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the key consideration for an entity when giving owners a choice of receiving either a non-cash asset or a cash alternative as a dividend?", "options": ["The tax implications of the choice made by the owners", "The probability of owners selecting each alternative", "The total market value of the assets distributed"], "correct": "The probability of owners selecting each alternative"}}
+[2024-08-31 15:04:43,925] 80 root - ERROR - get_document_data returned empty string
+[2024-08-31 15:08:53,816] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:08:55,158] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:08:55,161] 64 root - INFO - Total tokens:5724
+[2024-08-31 15:08:55,161] 65 root - INFO - Prompt tokens:5400
+[2024-08-31 15:08:55,161] 66 root - INFO - Completion tokens:324
+[2024-08-31 15:08:55,161] 67 root - INFO - Total cost:0.008748
+[2024-08-31 15:08:55,161] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following is considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a liability for a dividend payable involving non-cash assets?", "options": ["When the dividend is declared by management or the board of directors", "When the assets are distributed to the owners", "When the shareholders approve the dividend"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period would generally require disclosure according to Ind AS 10?", "options": ["Minor changes in asset prices", "Major business combinations after the reporting period", "Internal employee promotions"], "correct": "Major business combinations after the reporting period"}}
+[2024-08-31 15:08:55,161] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following is considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a liability for a dividend payable involving non-cash assets?", "options": ["When the dividend is declared by management or the board of directors", "When the assets are distributed to the owners", "When the shareholders approve the dividend"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period would generally require disclosure according to Ind AS 10?", "options": ["Minor changes in asset prices", "Major business combinations after the reporting period", "Internal employee promotions"], "correct": "Major business combinations after the reporting period"}}
+[2024-08-31 15:08:55,161] 33 root - INFO - Question type: True/False
+[2024-08-31 15:08:55,161] 71 root - INFO - Generated document data: 1. Which of the following is considered an adjusting event after the reporting period according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognise a liability for a dividend payable involving non-cash assets?
+   Answer: When the dividend is declared by management or the board of directors
+
+3. What type of events after the reporting period would generally require disclosure according to Ind AS 10?
+   Answer: Major business combinations after the reporting period
+
+
+[2024-08-31 15:09:06,785] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:09:09,823] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:09:09,826] 64 root - INFO - Total tokens:6048
+[2024-08-31 15:09:09,826] 65 root - INFO - Prompt tokens:5471
+[2024-08-31 15:09:09,826] 66 root - INFO - Completion tokens:577
+[2024-08-31 15:09:09,826] 67 root - INFO - Total cost:0.0093605
+[2024-08-31 15:09:09,826] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period as per Ind AS 10?", "options": {"a": "When an event has a material impact on profits", "b": "When an event confirms conditions that existed at the end of the reporting period", "c": "When an event occurs after the financial statements are approved for issue", "d": "When an event is publicly announced"}, "correct": "b"}, "2": {"mcq": "According to Ind AS 10, what type of events after the reporting period require an entity to adjust the amounts recognized in its financial statements?", "options": {"a": "Adjusting events", "b": "Non-adjusting events", "c": "Both adjusting and non-adjusting events", "d": "Events related to dividends"}, "correct": "a"}, "3": {"mcq": "Under Ind AS 10, what action should an entity take if it intends to liquidate the entity or cease trading after the reporting period?", "options": {"a": "Adjust the financial statements accordingly", "b": "Disclose the intention in the notes to financial statements", "c": "Prepare financial statements on a going concern basis", "d": "Seek approval from shareholders"}, "correct": "c"}}
+[2024-08-31 15:09:09,826] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period as per Ind AS 10?", "options": {"a": "When an event has a material impact on profits", "b": "When an event confirms conditions that existed at the end of the reporting period", "c": "When an event occurs after the financial statements are approved for issue", "d": "When an event is publicly announced"}, "correct": "b"}, "2": {"mcq": "According to Ind AS 10, what type of events after the reporting period require an entity to adjust the amounts recognized in its financial statements?", "options": {"a": "Adjusting events", "b": "Non-adjusting events", "c": "Both adjusting and non-adjusting events", "d": "Events related to dividends"}, "correct": "a"}, "3": {"mcq": "Under Ind AS 10, what action should an entity take if it intends to liquidate the entity or cease trading after the reporting period?", "options": {"a": "Adjust the financial statements accordingly", "b": "Disclose the intention in the notes to financial statements", "c": "Prepare financial statements on a going concern basis", "d": "Seek approval from shareholders"}, "correct": "c"}}
+[2024-08-31 15:09:09,826] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:09:09,827] 71 root - INFO - Generated document data: 1. When should an entity adjust its financial statements for events after the reporting period as per Ind AS 10?
+   a. When an event has a material impact on profits
+   b. When an event confirms conditions that existed at the end of the reporting period
+   c. When an event occurs after the financial statements are approved for issue
+   d. When an event is publicly announced
+   Correct Answer: b
+
+2. According to Ind AS 10, what type of events after the reporting period require an entity to adjust the amounts recognized in its financial statements?
+   a. Adjusting events
+   b. Non-adjusting events
+   c. Both adjusting and non-adjusting events
+   d. Events related to dividends
+   Correct Answer: a
+
+3. Under Ind AS 10, what action should an entity take if it intends to liquidate the entity or cease trading after the reporting period?
+   a. Adjust the financial statements accordingly
+   b. Disclose the intention in the notes to financial statements
+   c. Prepare financial statements on a going concern basis
+   d. Seek approval from shareholders
+   Correct Answer: c
+
+
+[2024-08-31 15:10:19,974] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:10:21,379] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:10:21,381] 64 root - INFO - Total tokens:5801
+[2024-08-31 15:10:21,381] 65 root - INFO - Prompt tokens:5456
+[2024-08-31 15:10:21,381] 66 root - INFO - Completion tokens:345
+[2024-08-31 15:10:21,381] 67 root - INFO - Total cost:0.008874
+[2024-08-31 15:10:21,381] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "What is the term used in Indian Accounting Standard 10 to describe events that occur between the end of the reporting period and the date when financial statements are approved for issue?", "options": {"a": "Post-reporting events", "b": "Pre-reporting events", "c": "Non-adjusting events", "d": "Events after the reporting period"}, "correct": "d"}, "2": {"mcq": "According to Ind AS 10, when should an entity adjust its financial statements for events after the reporting period?", "options": {"a": "If events have a significant financial impact", "b": "If events confirm conditions that existed at the end of the reporting period", "c": "If events show potential future profits", "d": "If events involve non-cash assets"}, "correct": "b"}, "3": {"mcq": "What type of events after the reporting period require an entity to adjust the amounts recognised in its financial statements according to Ind AS 10?", "options": {"a": "Non-disclosable events", "b": "Non-material events", "c": "Adjusting events", "d": "Dividend-related events"}, "correct": "c"}}
+[2024-08-31 15:10:21,381] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "What is the term used in Indian Accounting Standard 10 to describe events that occur between the end of the reporting period and the date when financial statements are approved for issue?", "options": {"a": "Post-reporting events", "b": "Pre-reporting events", "c": "Non-adjusting events", "d": "Events after the reporting period"}, "correct": "d"}, "2": {"mcq": "According to Ind AS 10, when should an entity adjust its financial statements for events after the reporting period?", "options": {"a": "If events have a significant financial impact", "b": "If events confirm conditions that existed at the end of the reporting period", "c": "If events show potential future profits", "d": "If events involve non-cash assets"}, "correct": "b"}, "3": {"mcq": "What type of events after the reporting period require an entity to adjust the amounts recognised in its financial statements according to Ind AS 10?", "options": {"a": "Non-disclosable events", "b": "Non-material events", "c": "Adjusting events", "d": "Dividend-related events"}, "correct": "c"}}
+[2024-08-31 15:10:21,381] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:10:21,381] 71 root - INFO - Generated document data: 1. What is the term used in Indian Accounting Standard 10 to describe events that occur between the end of the reporting period and the date when financial statements are approved for issue?
+
+   a. Post-reporting events
+
+   b. Pre-reporting events
+
+   c. Non-adjusting events
+
+   d. Events after the reporting period
+   Correct Answer: d
+
+2. According to Ind AS 10, when should an entity adjust its financial statements for events after the reporting period?
+
+   a. If events have a significant financial impact
+
+   b. If events confirm conditions that existed at the end of the reporting period
+
+   c. If events show potential future profits
+
+   d. If events involve non-cash assets
+   Correct Answer: b
+
+3. What type of events after the reporting period require an entity to adjust the amounts recognised in its financial statements according to Ind AS 10?
+
+   a. Non-disclosable events
+
+   b. Non-material events
+
+   c. Adjusting events
+
+   d. Dividend-related events
+   Correct Answer: c
+
+
+[2024-08-31 15:11:02,825] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:06,658] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:06,660] 64 root - INFO - Total tokens:6110
+[2024-08-31 15:11:06,660] 65 root - INFO - Prompt tokens:5491
+[2024-08-31 15:11:06,660] 66 root - INFO - Completion tokens:619
+[2024-08-31 15:11:06,660] 67 root - INFO - Total cost:0.0094745
+[2024-08-31 15:11:06,660] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+  "1": {
+    "mcq": "Under Indian Accounting Standard 10, what is the objective of prescribing events after the reporting period?",
+    "options": {
+      "a": "To ensure accurate tax reporting",
+      "b": "To provide information to management for decision-making",
+      "c": "To determine profit and loss for a period",
+      "d": "To provide financial information about events after the reporting period"
+    },
+    "correct": "d"
+  },
+  "2": {
+    "mcq": "Which type of event after the reporting period requires an entity to adjust the amounts recognized in its financial statements?",
+    "options": {
+      "a": "Non-adjusting events",
+      "b": "Events related to dividends",
+      "c": "Adjusting events",
+      "d": "Events related to going concern"
+    },
+    "correct": "c"
+  },
+  "3": {
+    "mcq": "What is the consequence of a decline in fair value of investments between the end of the reporting period and the date when the financial statements are approved for issue under Ind AS 10?",
+    "options": {
+      "a": "Recognition in financial statements",
+      "b": "Adjustment in dividends",
+      "c": "No adjustment in financial statements",
+      "d": "Update in balance sheet"
+    },
+    "correct": "c"
+  }
+}
+[2024-08-31 15:11:06,660] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+  "1": {
+    "mcq": "Under Indian Accounting Standard 10, what is the objective of prescribing events after the reporting period?",
+    "options": {
+      "a": "To ensure accurate tax reporting",
+      "b": "To provide information to management for decision-making",
+      "c": "To determine profit and loss for a period",
+      "d": "To provide financial information about events after the reporting period"
+    },
+    "correct": "d"
+  },
+  "2": {
+    "mcq": "Which type of event after the reporting period requires an entity to adjust the amounts recognized in its financial statements?",
+    "options": {
+      "a": "Non-adjusting events",
+      "b": "Events related to dividends",
+      "c": "Adjusting events",
+      "d": "Events related to going concern"
+    },
+    "correct": "c"
+  },
+  "3": {
+    "mcq": "What is the consequence of a decline in fair value of investments between the end of the reporting period and the date when the financial statements are approved for issue under Ind AS 10?",
+    "options": {
+      "a": "Recognition in financial statements",
+      "b": "Adjustment in dividends",
+      "c": "No adjustment in financial statements",
+      "d": "Update in balance sheet"
+    },
+    "correct": "c"
+  }
+}
+[2024-08-31 15:11:06,660] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:11:06,660] 71 root - INFO - Generated document data: 1. Under Indian Accounting Standard 10, what is the objective of prescribing events after the reporting period?
+
+   a. To ensure accurate tax reporting
+
+   b. To provide information to management for decision-making
+
+   c. To determine profit and loss for a period
+
+   d. To provide financial information about events after the reporting period
+
+ 
+   Correct Answer: d
+
+2. Which type of event after the reporting period requires an entity to adjust the amounts recognized in its financial statements?
+
+   a. Non-adjusting events
+
+   b. Events related to dividends
+
+   c. Adjusting events
+
+   d. Events related to going concern
+
+ 
+   Correct Answer: c
+
+3. What is the consequence of a decline in fair value of investments between the end of the reporting period and the date when the financial statements are approved for issue under Ind AS 10?
+
+   a. Recognition in financial statements
+
+   b. Adjustment in dividends
+
+   c. No adjustment in financial statements
+
+   d. Update in balance sheet
+
+ 
+   Correct Answer: c
+
+
+[2024-08-31 15:11:28,452] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:29,555] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:29,557] 64 root - INFO - Total tokens:5860
+[2024-08-31 15:11:29,557] 65 root - INFO - Prompt tokens:5500
+[2024-08-31 15:11:29,557] 66 root - INFO - Completion tokens:360
+[2024-08-31 15:11:29,557] 67 root - INFO - Total cost:0.008969999999999999
+[2024-08-31 15:11:29,557] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?",
+        "options": {
+            "a": "To ensure accurate tax reporting",
+            "b": "To provide information to management for decision-making",
+            "c": "To determine profit and loss for a period",
+            "d": "To prescribe when an entity should adjust its financial statements for events after the reporting period and the disclosures that should be given"
+        },
+        "correct": "d"
+    },
+    "2": {
+        "mcq": "When should an entity adjust the amounts recognised in its financial statements to reflect adjusting events after the reporting period?",
+        "options": {
+            "a": "Immediately after the events occur",
+            "b": "At the end of the financial year",
+            "c": "When the financial statements are approved for issue",
+            "d": "At the discretion of the management"
+        },
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "What type of event after the reporting period requires an entity to adjust the amounts recognised in its financial statements?",
+        "options": {
+            "a": "Non-adjusting events",
+            "b": "Events that are not significant",
+            "c": "Adjusting events",
+            "d": "Events that occur before the reporting period"
+        },
+        "correct": "c"
+    }
+}
+[2024-08-31 15:11:29,557] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "mcq": "What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?",
+        "options": {
+            "a": "To ensure accurate tax reporting",
+            "b": "To provide information to management for decision-making",
+            "c": "To determine profit and loss for a period",
+            "d": "To prescribe when an entity should adjust its financial statements for events after the reporting period and the disclosures that should be given"
+        },
+        "correct": "d"
+    },
+    "2": {
+        "mcq": "When should an entity adjust the amounts recognised in its financial statements to reflect adjusting events after the reporting period?",
+        "options": {
+            "a": "Immediately after the events occur",
+            "b": "At the end of the financial year",
+            "c": "When the financial statements are approved for issue",
+            "d": "At the discretion of the management"
+        },
+        "correct": "c"
+    },
+    "3": {
+        "mcq": "What type of event after the reporting period requires an entity to adjust the amounts recognised in its financial statements?",
+        "options": {
+            "a": "Non-adjusting events",
+            "b": "Events that are not significant",
+            "c": "Adjusting events",
+            "d": "Events that occur before the reporting period"
+        },
+        "correct": "c"
+    }
+}
+[2024-08-31 15:11:29,558] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:11:29,558] 71 root - INFO - Generated document data: 1. What is the primary objective of Indian Accounting Standard 10, Events after the Reporting Period?
+   a. To ensure accurate tax reporting
+   b. To provide information to management for decision-making
+   c. To determine profit and loss for a period
+   d. To prescribe when an entity should adjust its financial statements for events after the reporting period and the disclosures that should be given
+
+ 
+   Correct Answer: d
+
+2. When should an entity adjust the amounts recognised in its financial statements to reflect adjusting events after the reporting period?
+   a. Immediately after the events occur
+   b. At the end of the financial year
+   c. When the financial statements are approved for issue
+   d. At the discretion of the management
+
+ 
+   Correct Answer: c
+
+3. What type of event after the reporting period requires an entity to adjust the amounts recognised in its financial statements?
+   a. Non-adjusting events
+   b. Events that are not significant
+   c. Adjusting events
+   d. Events that occur before the reporting period
+
+ 
+   Correct Answer: c
+
+
+[2024-08-31 15:11:43,419] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:45,013] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:45,015] 64 root - INFO - Total tokens:5833
+[2024-08-31 15:11:45,016] 65 root - INFO - Prompt tokens:5463
+[2024-08-31 15:11:45,016] 66 root - INFO - Completion tokens:370
+[2024-08-31 15:11:45,016] 67 root - INFO - Total cost:0.0089345
+[2024-08-31 15:11:45,016] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When shareholders approve the financial statements", "b": "When the financial statements are made available to shareholders", "c": "When the financial statements are approved for issue by the Board of Directors", "d": "When the financial statements are filed with a regulatory body"}, "correct": "c"}, "2": {"mcq": "What type of event after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Minor changes in asset prices", "b": "Entering into insignificant commitments", "c": "Major business combination", "d": "Minor ordinary share transactions"}, "correct": "c"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At the original cost of the assets", "b": "At the carrying amount of the assets", "c": "At the fair value of the assets to be distributed", "d": "At the book value of the assets"}, "correct": "c"}}
+[2024-08-31 15:11:45,016] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"mcq": "When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?", "options": {"a": "When shareholders approve the financial statements", "b": "When the financial statements are made available to shareholders", "c": "When the financial statements are approved for issue by the Board of Directors", "d": "When the financial statements are filed with a regulatory body"}, "correct": "c"}, "2": {"mcq": "What type of event after the reporting period would generally result in disclosure according to Ind AS 10?", "options": {"a": "Minor changes in asset prices", "b": "Entering into insignificant commitments", "c": "Major business combination", "d": "Minor ordinary share transactions"}, "correct": "c"}, "3": {"mcq": "How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": {"a": "At the original cost of the assets", "b": "At the carrying amount of the assets", "c": "At the fair value of the assets to be distributed", "d": "At the book value of the assets"}, "correct": "c"}}
+[2024-08-31 15:11:45,016] 33 root - INFO - Question type: MCQ
+[2024-08-31 15:11:45,016] 71 root - INFO - Generated document data: 1. When should an entity adjust its financial statements for events after the reporting period according to Ind AS 10?
+
+   a. When shareholders approve the financial statements
+
+   b. When the financial statements are made available to shareholders
+
+   c. When the financial statements are approved for issue by the Board of Directors
+
+   d. When the financial statements are filed with a regulatory body
+
+ 
+   Correct Answer: c
+
+2. What type of event after the reporting period would generally result in disclosure according to Ind AS 10?
+
+   a. Minor changes in asset prices
+
+   b. Entering into insignificant commitments
+
+   c. Major business combination
+
+   d. Minor ordinary share transactions
+
+ 
+   Correct Answer: c
+
+3. How should an entity measure a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?
+
+   a. At the original cost of the assets
+
+   b. At the carrying amount of the assets
+
+   c. At the fair value of the assets to be distributed
+
+   d. At the book value of the assets
+
+ 
+   Correct Answer: c
+
+
+[2024-08-31 15:11:57,052] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:59,947] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:11:59,949] 64 root - INFO - Total tokens:5947
+[2024-08-31 15:11:59,949] 65 root - INFO - Prompt tokens:5429
+[2024-08-31 15:11:59,949] 66 root - INFO - Completion tokens:518
+[2024-08-31 15:11:59,961] 67 root - INFO - Total cost:0.0091795
+[2024-08-31 15:11:59,961] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events should lead to an adjustment in the financial statements according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation after the reporting period"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a liability to pay a dividend according to Appendix A of Ind AS 10?", "options": ["When the dividend declaration is approved by the shareholders", "When the dividend declaration is approved by the board of directors", "When the dividend is declared by management"], "correct": "When the dividend declaration is approved by the shareholders"}, "3": {"question": "What is the appropriate measurement for a liability to distribute non-cash assets as a dividend to owners according to Appendix A of Ind AS 10?", "options": ["Carrying amount of the assets to be distributed", "Historical cost of the assets to be distributed", "Fair value of the assets to be distributed"], "correct": "Fair value of the assets to be distributed"}}
+[2024-08-31 15:11:59,961] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events should lead to an adjustment in the financial statements according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "A decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation after the reporting period"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a liability to pay a dividend according to Appendix A of Ind AS 10?", "options": ["When the dividend declaration is approved by the shareholders", "When the dividend declaration is approved by the board of directors", "When the dividend is declared by management"], "correct": "When the dividend declaration is approved by the shareholders"}, "3": {"question": "What is the appropriate measurement for a liability to distribute non-cash assets as a dividend to owners according to Appendix A of Ind AS 10?", "options": ["Carrying amount of the assets to be distributed", "Historical cost of the assets to be distributed", "Fair value of the assets to be distributed"], "correct": "Fair value of the assets to be distributed"}}
+[2024-08-31 15:11:59,961] 33 root - INFO - Question type: True/False
+[2024-08-31 15:11:59,961] 71 root - INFO - Generated document data: 1. Which of the following events should lead to an adjustment in the financial statements according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognise a liability to pay a dividend according to Appendix A of Ind AS 10?
+   Answer: When the dividend declaration is approved by the shareholders
+
+3. What is the appropriate measurement for a liability to distribute non-cash assets as a dividend to owners according to Appendix A of Ind AS 10?
+   Answer: Fair value of the assets to be distributed
+
+
+[2024-08-31 15:12:12,807] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:12:13,837] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:12:13,838] 64 root - INFO - Total tokens:6608
+[2024-08-31 15:12:13,838] 65 root - INFO - Prompt tokens:6019
+[2024-08-31 15:12:13,838] 66 root - INFO - Completion tokens:589
+[2024-08-31 15:12:13,838] 67 root - INFO - Total cost:0.0102065
+[2024-08-31 15:12:13,838] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:12:13,838] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:12:13,838] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:12:13,838] 71 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:14:53,633] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:14:54,995] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:14:54,996] 64 root - INFO - Total tokens:5778
+[2024-08-31 15:14:54,996] 65 root - INFO - Prompt tokens:5429
+[2024-08-31 15:14:54,996] 66 root - INFO - Completion tokens:349
+[2024-08-31 15:14:54,996] 67 root - INFO - Total cost:0.0088415
+[2024-08-31 15:14:54,996] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a liability for a dividend payable in the form of non-cash assets to its owners?", "options": ["When the dividend is declared by management or the board of directors", "When the assets to be distributed reach a fair value threshold", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period would generally result in disclosure according to Ind AS 10?", "options": ["Minor changes in tax rates or tax laws enacted after the reporting period", "Major ordinary share transactions and potential ordinary share transactions", "Routine annual maintenance of production equipment"], "correct": "Major ordinary share transactions and potential ordinary share transactions"}}
+[2024-08-31 15:14:54,996] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a liability for a dividend payable in the form of non-cash assets to its owners?", "options": ["When the dividend is declared by management or the board of directors", "When the assets to be distributed reach a fair value threshold", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period would generally result in disclosure according to Ind AS 10?", "options": ["Minor changes in tax rates or tax laws enacted after the reporting period", "Major ordinary share transactions and potential ordinary share transactions", "Routine annual maintenance of production equipment"], "correct": "Major ordinary share transactions and potential ordinary share transactions"}}
+[2024-08-31 15:14:54,996] 33 root - INFO - Question type: True/False
+[2024-08-31 15:14:54,996] 68 root - INFO - Generated document data: 1. Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognize a liability for a dividend payable in the form of non-cash assets to its owners?
+   Answer: When the dividend is declared by management or the board of directors
+
+3. What type of events after the reporting period would generally result in disclosure according to Ind AS 10?
+   Answer: Major ordinary share transactions and potential ordinary share transactions
+
+
+[2024-08-31 15:24:01,375] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:24:02,754] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:24:02,756] 64 root - INFO - Total tokens:5735
+[2024-08-31 15:24:02,756] 65 root - INFO - Prompt tokens:5422
+[2024-08-31 15:24:02,756] 66 root - INFO - Completion tokens:313
+[2024-08-31 15:24:02,756] 67 root - INFO - Total cost:0.008759000000000001
+[2024-08-31 15:24:02,756] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events after the reporting period should be adjusted in the financial statements according to Ind AS 10?", "options": ["A. Decline in fair value of investments", "B. Settlement of a court case confirming a present obligation", "C. Announcement of a plan to discontinue an operation"], "correct": "B. Settlement of a court case confirming a present obligation"}, "2": {"question": "When should an entity recognize a liability for a dividend payable involving non-cash assets according to Appendix A of Ind AS 10?", "options": ["A. At the end of each reporting period", "B. When the dividend is declared by management or the board of directors", "C. When the assets are distributed to the owners"], "correct": "B. When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period generally result in disclosure according to Ind AS 10?", "options": ["A. Routine business transactions", "B. Changes in accounting policies", "C. Major business combinations or disposals of assets"], "correct": "C. Major business combinations or disposals of assets"}}
+[2024-08-31 15:24:02,756] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events after the reporting period should be adjusted in the financial statements according to Ind AS 10?", "options": ["A. Decline in fair value of investments", "B. Settlement of a court case confirming a present obligation", "C. Announcement of a plan to discontinue an operation"], "correct": "B. Settlement of a court case confirming a present obligation"}, "2": {"question": "When should an entity recognize a liability for a dividend payable involving non-cash assets according to Appendix A of Ind AS 10?", "options": ["A. At the end of each reporting period", "B. When the dividend is declared by management or the board of directors", "C. When the assets are distributed to the owners"], "correct": "B. When the dividend is declared by management or the board of directors"}, "3": {"question": "What type of events after the reporting period generally result in disclosure according to Ind AS 10?", "options": ["A. Routine business transactions", "B. Changes in accounting policies", "C. Major business combinations or disposals of assets"], "correct": "C. Major business combinations or disposals of assets"}}
+[2024-08-31 15:24:02,756] 33 root - INFO - Question type: True/False
+[2024-08-31 15:24:02,756] 68 root - INFO - Generated document data: 1. Which of the following events after the reporting period should be adjusted in the financial statements according to Ind AS 10?
+   Answer: B. Settlement of a court case confirming a present obligation
+
+2. When should an entity recognize a liability for a dividend payable involving non-cash assets according to Appendix A of Ind AS 10?
+   Answer: B. When the dividend is declared by management or the board of directors
+
+3. What type of events after the reporting period generally result in disclosure according to Ind AS 10?
+   Answer: C. Major business combinations or disposals of assets
+
+
+[2024-08-31 15:24:54,977] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:24:56,569] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:24:56,572] 64 root - INFO - Total tokens:5783
+[2024-08-31 15:24:56,572] 65 root - INFO - Prompt tokens:5426
+[2024-08-31 15:24:56,572] 66 root - INFO - Completion tokens:357
+[2024-08-31 15:24:56,572] 67 root - INFO - Total cost:0.008853000000000001
+[2024-08-31 15:24:56,572] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a dividend payable when distributing non-cash assets as dividends to its owners?", "options": ["At the end of each reporting period", "When the dividend is declared by management or the board of directors", "When shareholders approve the distribution"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the appropriate accounting treatment for any difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable when settling the dividend payable?", "options": ["Recognise in equity as adjustments to the amount of the distribution", "Recognise in profit or loss", "Disclose separately in the notes to financial statements"], "correct": "Recognise in profit or loss"}}
+[2024-08-31 15:24:56,572] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Announcing a plan to discontinue an operation"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognise a dividend payable when distributing non-cash assets as dividends to its owners?", "options": ["At the end of each reporting period", "When the dividend is declared by management or the board of directors", "When shareholders approve the distribution"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "What is the appropriate accounting treatment for any difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable when settling the dividend payable?", "options": ["Recognise in equity as adjustments to the amount of the distribution", "Recognise in profit or loss", "Disclose separately in the notes to financial statements"], "correct": "Recognise in profit or loss"}}
+[2024-08-31 15:24:56,572] 33 root - INFO - Question type: True/False
+[2024-08-31 15:24:56,572] 68 root - INFO - Generated document data: 1. Which of the following events would be considered an adjusting event after the reporting period according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognise a dividend payable when distributing non-cash assets as dividends to its owners?
+   Answer: When the dividend is declared by management or the board of directors
+
+3. What is the appropriate accounting treatment for any difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable when settling the dividend payable?
+   Answer: Recognise in profit or loss
+
+
+[2024-08-31 15:28:10,140] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:28:11,225] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:28:11,227] 64 root - INFO - Total tokens:6597
+[2024-08-31 15:28:11,227] 65 root - INFO - Prompt tokens:6019
+[2024-08-31 15:28:11,227] 66 root - INFO - Completion tokens:578
+[2024-08-31 15:28:11,227] 67 root - INFO - Total cost:0.010184499999999999
+[2024-08-31 15:28:11,228] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:28:11,228] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:28:11,228] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:28:11,228] 68 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:33:30,624] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:33:31,873] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:33:31,876] 64 root - INFO - Total tokens:5800
+[2024-08-31 15:33:31,876] 65 root - INFO - Prompt tokens:5460
+[2024-08-31 15:33:31,876] 66 root - INFO - Completion tokens:340
+[2024-08-31 15:33:31,876] 67 root - INFO - Total cost:0.008870000000000001
+[2024-08-31 15:33:31,876] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events after the reporting period is considered an adjusting event according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Major restructuring announced after the reporting period"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": ["When the entity receives information about the distribution", "When the dividend is declared by management or the board of directors", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "According to Ind AS 10, when is an entity not required to adjust the amounts recognized in its financial statements for events after the reporting period?", "options": ["When a major business combination occurs after the reporting period", "When there is a decline in fair value of investments after the reporting period", "When the entity settles a dividend payable to owners"], "correct": "When there is a decline in fair value of investments after the reporting period"}}
+[2024-08-31 15:33:31,876] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "Which of the following events after the reporting period is considered an adjusting event according to Ind AS 10?", "options": ["A court case settlement confirming a present obligation at the end of the reporting period", "Decline in fair value of investments after the reporting period", "Major restructuring announced after the reporting period"], "correct": "A court case settlement confirming a present obligation at the end of the reporting period"}, "2": {"question": "When should an entity recognize a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?", "options": ["When the entity receives information about the distribution", "When the dividend is declared by management or the board of directors", "When the financial statements are approved for issue"], "correct": "When the dividend is declared by management or the board of directors"}, "3": {"question": "According to Ind AS 10, when is an entity not required to adjust the amounts recognized in its financial statements for events after the reporting period?", "options": ["When a major business combination occurs after the reporting period", "When there is a decline in fair value of investments after the reporting period", "When the entity settles a dividend payable to owners"], "correct": "When there is a decline in fair value of investments after the reporting period"}}
+[2024-08-31 15:33:31,876] 33 root - INFO - Question type: True/False
+[2024-08-31 15:33:31,876] 68 root - INFO - Generated document data: 1. Which of the following events after the reporting period is considered an adjusting event according to Ind AS 10?
+   Answer: A court case settlement confirming a present obligation at the end of the reporting period
+
+2. When should an entity recognize a liability to distribute non-cash assets as a dividend to its owners according to Appendix A of Ind AS 10?
+   Answer: When the dividend is declared by management or the board of directors
+
+3. According to Ind AS 10, when is an entity not required to adjust the amounts recognized in its financial statements for events after the reporting period?
+   Answer: When there is a decline in fair value of investments after the reporting period
+
+
+[2024-08-31 15:33:45,536] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:33:46,583] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:33:46,584] 64 root - INFO - Total tokens:6616
+[2024-08-31 15:33:46,584] 65 root - INFO - Prompt tokens:6031
+[2024-08-31 15:33:46,584] 66 root - INFO - Completion tokens:585
+[2024-08-31 15:33:46,584] 67 root - INFO - Total cost:0.010216499999999998
+[2024-08-31 15:33:46,584] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:33:46,584] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:33:46,585] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:33:46,585] 68 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:34:59,444] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:35:00,525] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:35:00,527] 64 root - INFO - Total tokens:6606
+[2024-08-31 15:35:00,527] 65 root - INFO - Prompt tokens:6029
+[2024-08-31 15:35:00,527] 66 root - INFO - Completion tokens:577
+[2024-08-31 15:35:00,527] 67 root - INFO - Total cost:0.0101975
+[2024-08-31 15:35:00,527] 72 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:35:00,527] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:35:00,527] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:35:00,527] 68 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:40:19,582] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:40:20,673] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:40:20,675] 61 root - INFO - Total tokens:5516
+[2024-08-31 15:40:20,675] 62 root - INFO - Prompt tokens:5310
+[2024-08-31 15:40:20,675] 63 root - INFO - Completion tokens:206
+[2024-08-31 15:40:20,675] 64 root - INFO - Total cost:0.008377
+[2024-08-31 15:40:20,675] 69 root - INFO - Received quiz: ### RESPONSE_JSON
+{"1": {"question": "True or False: According to Indian Accounting Standard 10, events after the reporting period can be classified into adjusting events after the reporting period and non-adjusting events after the reporting period.", "correct": "True"}, "2": {"question": "True or False: If an entity declares dividends to holders of equity instruments after the reporting period, the entity should recognize those dividends as a liability at the end of the reporting period.", "correct": "False"}, "3": {"question": "True or False: Indian Accounting Standard 10 requires entities to recognize a liability for dividend payable when the dividend is appropriately authorized and no longer at the discretion of the entity.", "correct": "True"}}
+[2024-08-31 15:40:20,675] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{"1": {"question": "True or False: According to Indian Accounting Standard 10, events after the reporting period can be classified into adjusting events after the reporting period and non-adjusting events after the reporting period.", "correct": "True"}, "2": {"question": "True or False: If an entity declares dividends to holders of equity instruments after the reporting period, the entity should recognize those dividends as a liability at the end of the reporting period.", "correct": "False"}, "3": {"question": "True or False: Indian Accounting Standard 10 requires entities to recognize a liability for dividend payable when the dividend is appropriately authorized and no longer at the discretion of the entity.", "correct": "True"}}
+[2024-08-31 15:40:20,675] 33 root - INFO - Question type: True/False
+[2024-08-31 15:40:20,675] 65 root - INFO - Generated document data: 1. True or False: According to Indian Accounting Standard 10, events after the reporting period can be classified into adjusting events after the reporting period and non-adjusting events after the reporting period.
+   Correct Answer: True
+
+2. True or False: If an entity declares dividends to holders of equity instruments after the reporting period, the entity should recognize those dividends as a liability at the end of the reporting period.
+   Correct Answer: False
+
+3. True or False: Indian Accounting Standard 10 requires entities to recognize a liability for dividend payable when the dividend is appropriately authorized and no longer at the discretion of the entity.
+   Correct Answer: True
+
+
+[2024-08-31 15:40:53,688] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:40:56,012] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:40:56,015] 61 root - INFO - Total tokens:6712
+[2024-08-31 15:40:56,015] 62 root - INFO - Prompt tokens:6010
+[2024-08-31 15:40:56,015] 63 root - INFO - Completion tokens:702
+[2024-08-31 15:40:56,015] 64 root - INFO - Total cost:0.010419
+[2024-08-31 15:40:56,015] 69 root - INFO - Received quiz: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:40:56,015] 32 root - INFO - Received quiz_str: ### RESPONSE_JSON
+{
+    "1": {
+        "question": "Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:\n\n- Completion of preparation of financial statements: 28th May, 20X2\n- Board reviews and approves for issue: 19th June, 20X2\n- Available to shareholders: 1st July, 20X2\n- Annual General Meeting: 15th September, 20X2\n- Filed with regulatory authority: 16th October, 20X2\n\nWhat is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?",
+        "solution": "As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.\n\nIf the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements."
+    },
+    "2": {
+        "question": "Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:\n\n- Preparation completed: 15th February, 20X2\n- Board approval: 1st March, 20X2\n- Distributed to shareholders: 10th March, 20X2\n- Annual General Meeting: 5th April, 20X2\n- Submitted to regulatory authority: 20th April, 20X2\n\nDetermine the date of approval for issue. Would the approach differ for a sole proprietorship?",
+        "solution": "According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements."
+    }
+}
+[2024-08-31 15:40:56,015] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:40:56,015] 65 root - INFO - Generated document data: 1. Illustration 1: A company prepared its financial statements for the reporting period from 1st April, 20X1 to 31st March, 20X2. The following dates are available:
+
+- Completion of preparation of financial statements: 28th May, 20X2
+- Board reviews and approves for issue: 19th June, 20X2
+- Available to shareholders: 1st July, 20X2
+- Annual General Meeting: 15th September, 20X2
+- Filed with regulatory authority: 16th October, 20X2
+
+What is the date of approval for the issue of the financial statements? Would your answer differ if the entity is a partnership firm?
+
+   Suggested Solution:
+As per Ind AS 10, the date of approval for the issue of financial statements is the date on which the financial statements are approved by the Board of Directors in the case of a company, and by the corresponding approving authority in the case of any other entity. Accordingly, in this case, the date of approval is the date on which the financial statements are approved by the Board of Directors of the company, i.e., 19th June, 20X2.
+
+If the entity is a partnership firm, the date of approval will be the date when the relevant approving authority of such entity approves the financial statements for issue, i.e., the date when the partner(s) of the firm approve(s) the financial statements.
+
+2. Illustration 2: A company finalized its financial statements for the fiscal year ending 31st December, 20X1. The following dates are relevant:
+
+- Preparation completed: 15th February, 20X2
+- Board approval: 1st March, 20X2
+- Distributed to shareholders: 10th March, 20X2
+- Annual General Meeting: 5th April, 20X2
+- Submitted to regulatory authority: 20th April, 20X2
+
+Determine the date of approval for issue. Would the approach differ for a sole proprietorship?
+
+   Suggested Solution:
+According to Ind AS 10, the date of approval for issue is when the Board of Directors approves the financial statements. Therefore, the approval date is 1st March, 20X2. For a sole proprietorship, the approval date would be when the sole proprietor approves the financial statements.
+
+
+[2024-08-31 15:43:33,476] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:43:34,558] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:43:34,560] 61 root - INFO - Total tokens:5881
+[2024-08-31 15:43:34,560] 62 root - INFO - Prompt tokens:5442
+[2024-08-31 15:43:34,560] 63 root - INFO - Completion tokens:439
+[2024-08-31 15:43:34,560] 64 root - INFO - Total cost:0.009041
+[2024-08-31 15:43:34,560] 69 root - INFO - Received quiz: {
+    "1": {
+        "question": "Explain the difference between adjusting events and non-adjusting events after the reporting period as per Ind AS 10.",
+        "solution": "Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period and require adjustments to be made in the financial statements. On the other hand, non-adjusting events after the reporting period are indicative of conditions that arose after the reporting period and do not require adjustments to be made in the financial statements."
+    },
+    "2": {
+        "question": "When should an entity recognise a dividend payable related to the distribution of non-cash assets to its owners as per Appendix A of Ind AS 10?",
+        "solution": "An entity should recognise a dividend payable when the dividend is appropriately authorised and is no longer at the discretion of the entity. This is typically when the declaration of the dividend is approved by the relevant authority, such as the shareholders, or when the dividend is declared by management or the board of directors if further approval is not required."
+    },
+    "3": {
+        "question": "What disclosures are required if an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue as per Appendix A of Ind AS 10?",
+        "solution": "If an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue, it must disclose the nature of the asset to be distributed, the carrying amount of the asset as of the end of the reporting period, and the fair value of the asset as of the end of the reporting period if different from its carrying amount. Additionally, the entity must provide information about the method(s) used to measure the fair value of the asset."
+    }
+}
+[2024-08-31 15:43:34,560] 32 root - INFO - Received quiz_str: {
+    "1": {
+        "question": "Explain the difference between adjusting events and non-adjusting events after the reporting period as per Ind AS 10.",
+        "solution": "Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period and require adjustments to be made in the financial statements. On the other hand, non-adjusting events after the reporting period are indicative of conditions that arose after the reporting period and do not require adjustments to be made in the financial statements."
+    },
+    "2": {
+        "question": "When should an entity recognise a dividend payable related to the distribution of non-cash assets to its owners as per Appendix A of Ind AS 10?",
+        "solution": "An entity should recognise a dividend payable when the dividend is appropriately authorised and is no longer at the discretion of the entity. This is typically when the declaration of the dividend is approved by the relevant authority, such as the shareholders, or when the dividend is declared by management or the board of directors if further approval is not required."
+    },
+    "3": {
+        "question": "What disclosures are required if an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue as per Appendix A of Ind AS 10?",
+        "solution": "If an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue, it must disclose the nature of the asset to be distributed, the carrying amount of the asset as of the end of the reporting period, and the fair value of the asset as of the end of the reporting period if different from its carrying amount. Additionally, the entity must provide information about the method(s) used to measure the fair value of the asset."
+    }
+}
+[2024-08-31 15:43:34,560] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:43:34,560] 65 root - INFO - Generated document data: 1. Explain the difference between adjusting events and non-adjusting events after the reporting period as per Ind AS 10.
+
+   Suggested Solution:
+Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period and require adjustments to be made in the financial statements. On the other hand, non-adjusting events after the reporting period are indicative of conditions that arose after the reporting period and do not require adjustments to be made in the financial statements.
+
+2. When should an entity recognise a dividend payable related to the distribution of non-cash assets to its owners as per Appendix A of Ind AS 10?
+
+   Suggested Solution:
+An entity should recognise a dividend payable when the dividend is appropriately authorised and is no longer at the discretion of the entity. This is typically when the declaration of the dividend is approved by the relevant authority, such as the shareholders, or when the dividend is declared by management or the board of directors if further approval is not required.
+
+3. What disclosures are required if an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue as per Appendix A of Ind AS 10?
+
+   Suggested Solution:
+If an entity declares a dividend to distribute a non-cash asset after the end of a reporting period but before the financial statements are approved for issue, it must disclose the nature of the asset to be distributed, the carrying amount of the asset as of the end of the reporting period, and the fair value of the asset as of the end of the reporting period if different from its carrying amount. Additionally, the entity must provide information about the method(s) used to measure the fair value of the asset.
+
+
+[2024-08-31 15:44:35,741] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:44:37,064] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:44:37,066] 61 root - INFO - Total tokens:5948
+[2024-08-31 15:44:37,067] 62 root - INFO - Prompt tokens:5458
+[2024-08-31 15:44:37,067] 63 root - INFO - Completion tokens:490
+[2024-08-31 15:44:37,067] 64 root - INFO - Total cost:0.009167000000000002
+[2024-08-31 15:44:37,067] 69 root - INFO - Received quiz: {
+    "1": {
+        "question": "Explain in detail the criteria for recognizing an adjusting event after the reporting period according to Indian Accounting Standard 10.",
+        "solution": "According to Indian Accounting Standard 10, an entity should adjust the amounts recognized in its financial statements to reflect adjusting events after the reporting period. Examples of adjusting events include the settlement of a court case confirming a present obligation at the end of the reporting period, impairment of assets, determination of costs of assets purchased or proceeds from assets sold, etc. The entity should adjust the recognized amounts or recognize new items based on these events."
+    },
+    "2": {
+        "question": "Describe the conditions under which an entity should not prepare its financial statements on a going concern basis as per Indian Accounting Standard 10.",
+        "solution": "Indian Accounting Standard 10 states that an entity should not prepare its financial statements on a going concern basis if management determines after the reporting period that it intends to liquidate the entity, cease trading, or has no realistic alternative but to do so. Deterioration in operating results and financial position post the reporting period may indicate the need to reconsider the going concern assumption."
+    },
+    "3": {
+        "question": "Discuss the measurement and accounting treatment of a dividend payable involving non-cash assets distribution as per Appendix A of Indian Accounting Standard 10.",
+        "solution": "According to Appendix A, when an entity declares a distribution involving non-cash assets as dividends to its owners, it should recognize a liability for the dividend payable when appropriately authorized. The liability should be measured at the fair value of the assets to be distributed. Upon settlement, any difference between the carrying amount of the assets distributed and the dividend payable should be recognized in profit or loss. Presentation and disclosure requirements include presenting the difference in profit or loss and disclosing the carrying amount of the dividend payable at the beginning and end of the period."
+    }
+}
+[2024-08-31 15:44:37,067] 32 root - INFO - Received quiz_str: {
+    "1": {
+        "question": "Explain in detail the criteria for recognizing an adjusting event after the reporting period according to Indian Accounting Standard 10.",
+        "solution": "According to Indian Accounting Standard 10, an entity should adjust the amounts recognized in its financial statements to reflect adjusting events after the reporting period. Examples of adjusting events include the settlement of a court case confirming a present obligation at the end of the reporting period, impairment of assets, determination of costs of assets purchased or proceeds from assets sold, etc. The entity should adjust the recognized amounts or recognize new items based on these events."
+    },
+    "2": {
+        "question": "Describe the conditions under which an entity should not prepare its financial statements on a going concern basis as per Indian Accounting Standard 10.",
+        "solution": "Indian Accounting Standard 10 states that an entity should not prepare its financial statements on a going concern basis if management determines after the reporting period that it intends to liquidate the entity, cease trading, or has no realistic alternative but to do so. Deterioration in operating results and financial position post the reporting period may indicate the need to reconsider the going concern assumption."
+    },
+    "3": {
+        "question": "Discuss the measurement and accounting treatment of a dividend payable involving non-cash assets distribution as per Appendix A of Indian Accounting Standard 10.",
+        "solution": "According to Appendix A, when an entity declares a distribution involving non-cash assets as dividends to its owners, it should recognize a liability for the dividend payable when appropriately authorized. The liability should be measured at the fair value of the assets to be distributed. Upon settlement, any difference between the carrying amount of the assets distributed and the dividend payable should be recognized in profit or loss. Presentation and disclosure requirements include presenting the difference in profit or loss and disclosing the carrying amount of the dividend payable at the beginning and end of the period."
+    }
+}
+[2024-08-31 15:44:37,067] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:44:37,067] 65 root - INFO - Generated document data: 1. Explain in detail the criteria for recognizing an adjusting event after the reporting period according to Indian Accounting Standard 10.
+
+   Suggested Solution:
+According to Indian Accounting Standard 10, an entity should adjust the amounts recognized in its financial statements to reflect adjusting events after the reporting period. Examples of adjusting events include the settlement of a court case confirming a present obligation at the end of the reporting period, impairment of assets, determination of costs of assets purchased or proceeds from assets sold, etc. The entity should adjust the recognized amounts or recognize new items based on these events.
+
+2. Describe the conditions under which an entity should not prepare its financial statements on a going concern basis as per Indian Accounting Standard 10.
+
+   Suggested Solution:
+Indian Accounting Standard 10 states that an entity should not prepare its financial statements on a going concern basis if management determines after the reporting period that it intends to liquidate the entity, cease trading, or has no realistic alternative but to do so. Deterioration in operating results and financial position post the reporting period may indicate the need to reconsider the going concern assumption.
+
+3. Discuss the measurement and accounting treatment of a dividend payable involving non-cash assets distribution as per Appendix A of Indian Accounting Standard 10.
+
+   Suggested Solution:
+According to Appendix A, when an entity declares a distribution involving non-cash assets as dividends to its owners, it should recognize a liability for the dividend payable when appropriately authorized. The liability should be measured at the fair value of the assets to be distributed. Upon settlement, any difference between the carrying amount of the assets distributed and the dividend payable should be recognized in profit or loss. Presentation and disclosure requirements include presenting the difference in profit or loss and disclosing the carrying amount of the dividend payable at the beginning and end of the period.
+
+
+[2024-08-31 15:45:01,763] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:45:06,624] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:45:06,626] 61 root - INFO - Total tokens:5778
+[2024-08-31 15:45:06,626] 62 root - INFO - Prompt tokens:5369
+[2024-08-31 15:45:06,626] 63 root - INFO - Completion tokens:409
+[2024-08-31 15:45:06,626] 64 root - INFO - Total cost:0.0088715
+[2024-08-31 15:45:06,626] 69 root - INFO - Received quiz: {
+    "1": {
+        "question": "True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period.",
+        "correct": "True"
+    },
+    "2": {
+        "question": "True or False: Indian Accounting Standard 10 requires an entity to recognize dividends as a liability at the end of the reporting period, even if the dividends are declared after the reporting period but before the financial statements are approved for issue.",
+        "correct": "False"
+    },
+    "3": {
+        "question": "True or False: When an entity settles a dividend payable in the form of non-cash assets, the difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable is recognized in equity as adjustments to the amount of the distribution.",
+        "correct": "False"
+    }
+}
+[2024-08-31 15:45:06,626] 32 root - INFO - Received quiz_str: {
+    "1": {
+        "question": "True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period.",
+        "correct": "True"
+    },
+    "2": {
+        "question": "True or False: Indian Accounting Standard 10 requires an entity to recognize dividends as a liability at the end of the reporting period, even if the dividends are declared after the reporting period but before the financial statements are approved for issue.",
+        "correct": "False"
+    },
+    "3": {
+        "question": "True or False: When an entity settles a dividend payable in the form of non-cash assets, the difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable is recognized in equity as adjustments to the amount of the distribution.",
+        "correct": "False"
+    }
+}
+[2024-08-31 15:45:06,626] 33 root - INFO - Question type: True/False
+[2024-08-31 15:45:06,627] 65 root - INFO - Generated document data: 1. True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period.
+   Correct Answer: True
+
+2. True or False: Indian Accounting Standard 10 requires an entity to recognize dividends as a liability at the end of the reporting period, even if the dividends are declared after the reporting period but before the financial statements are approved for issue.
+   Correct Answer: False
+
+3. True or False: When an entity settles a dividend payable in the form of non-cash assets, the difference between the carrying amount of the assets distributed and the carrying amount of the dividend payable is recognized in equity as adjustments to the amount of the distribution.
+   Correct Answer: False
+
+
+[2024-08-31 15:45:30,834] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:45:31,900] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:45:31,901] 61 root - INFO - Total tokens:5623
+[2024-08-31 15:45:31,902] 62 root - INFO - Prompt tokens:5372
+[2024-08-31 15:45:31,902] 63 root - INFO - Completion tokens:251
+[2024-08-31 15:45:31,902] 64 root - INFO - Total cost:0.00856
+[2024-08-31 15:45:31,902] 69 root - INFO - Received quiz: {"1": {"question": "True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period, but not for events that indicate conditions that arose after the reporting period.", "correct": "True"}, "2": {"question": "True or False: In the context of non-cash asset distributions as dividends, an entity should recognise a liability for the dividend payable when the dividend is approved by the shareholders, if required, or when the dividend is declared by management, if no further approval is needed.", "correct": "True"}, "3": {"question": "True or False: Under Indian Accounting Standard 10, if an entity declares dividends to holders of equity instruments after the reporting period but before the financial statements are approved for issue, the dividends should be recognized as a liability at the end of the reporting period.", "correct": "False"}}
+[2024-08-31 15:45:31,902] 32 root - INFO - Received quiz_str: {"1": {"question": "True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period, but not for events that indicate conditions that arose after the reporting period.", "correct": "True"}, "2": {"question": "True or False: In the context of non-cash asset distributions as dividends, an entity should recognise a liability for the dividend payable when the dividend is approved by the shareholders, if required, or when the dividend is declared by management, if no further approval is needed.", "correct": "True"}, "3": {"question": "True or False: Under Indian Accounting Standard 10, if an entity declares dividends to holders of equity instruments after the reporting period but before the financial statements are approved for issue, the dividends should be recognized as a liability at the end of the reporting period.", "correct": "False"}}
+[2024-08-31 15:45:31,902] 33 root - INFO - Question type: True/False
+[2024-08-31 15:45:31,902] 65 root - INFO - Generated document data: 1. True or False: According to Indian Accounting Standard 10, an entity should adjust its financial statements for events after the reporting period that provide evidence of conditions that existed at the end of the reporting period, but not for events that indicate conditions that arose after the reporting period.
+
+   Correct Answer: True
+
+2. True or False: In the context of non-cash asset distributions as dividends, an entity should recognise a liability for the dividend payable when the dividend is approved by the shareholders, if required, or when the dividend is declared by management, if no further approval is needed.
+
+   Correct Answer: True
+
+3. True or False: Under Indian Accounting Standard 10, if an entity declares dividends to holders of equity instruments after the reporting period but before the financial statements are approved for issue, the dividends should be recognized as a liability at the end of the reporting period.
+
+   Correct Answer: False
+
+
+[2024-08-31 15:48:09,976] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:48:11,818] 1026 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-08-31 15:48:11,820] 61 root - INFO - Total tokens:6232
+[2024-08-31 15:48:11,821] 62 root - INFO - Prompt tokens:5708
+[2024-08-31 15:48:11,821] 63 root - INFO - Completion tokens:524
+[2024-08-31 15:48:11,821] 64 root - INFO - Total cost:0.00961
+[2024-08-31 15:48:11,821] 69 root - INFO - Received quiz: {
+  "1": {
+    "question": "Explain the concept of adjusting events after the reporting period in the context of Ind AS 10. Provide examples of such events and discuss how they should be recognized and measured in financial statements.",
+    "solution": "Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period. Examples include the settlement of a court case confirming a present obligation, impairment of assets, and discovery of fraud or errors. These events should be adjusted in the financial statements to reflect the new information and ensure accurate reporting.",
+    "difficulty_level": "Difficult"
+  },
+  "2": {
+    "question": "Discuss the implications of a company not preparing its financial statements on a going concern basis as per Ind AS 10. Explain the circumstances under which the going concern assumption may no longer be appropriate and the required disclosures in such cases.",
+    "solution": "If a company determines after the reporting period that it intends to liquidate or cease trading, the financial statements should not be prepared on a going concern basis. Deterioration in operating results and financial position may indicate the need to reconsider the going concern assumption. In such cases, fundamental changes in the basis of accounting are required, and specific disclosures about the going concern status and uncertainties should be provided.",
+    "difficulty_level": "Difficult"
+  },
+  "3": {
+    "question": "Describe the accounting treatment of non-adjusting events after the reporting period as per Ind AS 10. Provide examples of non-adjusting events and explain why they are not reflected in the financial statements.",
+    "solution": "Non-adjusting events after the reporting period are events that occur between the end of the reporting period and the date of financial statement approval but do not require adjustments to the financial statements. Examples include a decline in fair value of investments and major business announcements. These events are disclosed in the financial statements but not adjusted as they do not relate to conditions existing at the end of the reporting period.",
+    "difficulty_level": "Difficult"
+  }
+}
+[2024-08-31 15:48:11,821] 32 root - INFO - Received quiz_str: {
+  "1": {
+    "question": "Explain the concept of adjusting events after the reporting period in the context of Ind AS 10. Provide examples of such events and discuss how they should be recognized and measured in financial statements.",
+    "solution": "Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period. Examples include the settlement of a court case confirming a present obligation, impairment of assets, and discovery of fraud or errors. These events should be adjusted in the financial statements to reflect the new information and ensure accurate reporting.",
+    "difficulty_level": "Difficult"
+  },
+  "2": {
+    "question": "Discuss the implications of a company not preparing its financial statements on a going concern basis as per Ind AS 10. Explain the circumstances under which the going concern assumption may no longer be appropriate and the required disclosures in such cases.",
+    "solution": "If a company determines after the reporting period that it intends to liquidate or cease trading, the financial statements should not be prepared on a going concern basis. Deterioration in operating results and financial position may indicate the need to reconsider the going concern assumption. In such cases, fundamental changes in the basis of accounting are required, and specific disclosures about the going concern status and uncertainties should be provided.",
+    "difficulty_level": "Difficult"
+  },
+  "3": {
+    "question": "Describe the accounting treatment of non-adjusting events after the reporting period as per Ind AS 10. Provide examples of non-adjusting events and explain why they are not reflected in the financial statements.",
+    "solution": "Non-adjusting events after the reporting period are events that occur between the end of the reporting period and the date of financial statement approval but do not require adjustments to the financial statements. Examples include a decline in fair value of investments and major business announcements. These events are disclosed in the financial statements but not adjusted as they do not relate to conditions existing at the end of the reporting period.",
+    "difficulty_level": "Difficult"
+  }
+}
+[2024-08-31 15:48:11,821] 33 root - INFO - Question type: Descriptive
+[2024-08-31 15:48:11,821] 74 root - INFO - Generated document data: 1.  Explain the concept of adjusting events after the reporting period in the context of Ind AS 10. Provide examples of such events and discuss how they should be recognized and measured in financial statements.
+
+   
+
+   Suggested Solution:
+Adjusting events after the reporting period are events that provide evidence of conditions that existed at the end of the reporting period. Examples include the settlement of a court case confirming a present obligation, impairment of assets, and discovery of fraud or errors. These events should be adjusted in the financial statements to reflect the new information and ensure accurate reporting.
+
+2.  Discuss the implications of a company not preparing its financial statements on a going concern basis as per Ind AS 10. Explain the circumstances under which the going concern assumption may no longer be appropriate and the required disclosures in such cases.
+
+   
+
+   Suggested Solution:
+If a company determines after the reporting period that it intends to liquidate or cease trading, the financial statements should not be prepared on a going concern basis. Deterioration in operating results and financial position may indicate the need to reconsider the going concern assumption. In such cases, fundamental changes in the basis of accounting are required, and specific disclosures about the going concern status and uncertainties should be provided.
+
+3.  Describe the accounting treatment of non-adjusting events after the reporting period as per Ind AS 10. Provide examples of non-adjusting events and explain why they are not reflected in the financial statements.
+
+   
+
+   Suggested Solution:
+Non-adjusting events after the reporting period are events that occur between the end of the reporting period and the date of financial statement approval but do not require adjustments to the financial statements. Examples include a decline in fair value of investments and major business announcements. These events are disclosed in the financial statements but not adjusted as they do not relate to conditions existing at the end of the reporting period.
+
+
