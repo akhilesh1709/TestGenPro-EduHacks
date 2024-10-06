@@ -14,7 +14,7 @@ openai_api_key = st.secrets.get("OPENAI_API_KEY")
 if not openai_api_key:
     raise ValueError("OpenAI API key is not set. Please check your .env file.")
 
-llm = ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-4o", temperature=0.7)
+llm = ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-3.5-turbo", temperature=0.7)
 
 quiz_generation_template = """
 Text: {text}
