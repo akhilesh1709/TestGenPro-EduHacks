@@ -1,6 +1,6 @@
 # TestGenPro: AI-Powered Learning and Assessment Tool
 
-TestGenPro is an advanced AI-based tool that helps users create assessments, generate study notes, and even convert content into audio podcasts. The app offers multiple features, including automatic generation of multiple-choice, true/false, and descriptive questions, performance tracking, and quiz review functionalities. It is built using Python, Streamlit, and OpenAI's GPT models for text generation.This is the submission as a part of the Eduhacks 1.0 Hackathon held by VedaVerse on Unstop platform.
+TestGenPro is an advanced AI-based tool that helps users create assessments, generate study notes, and even convert content into audio podcasts. The app offers multiple features, including automatic generation of multiple-choice, true/false, and descriptive questions, performance tracking, and quiz review functionalities. It is built using Python, Streamlit, and OpenAI's GPT models for text generation.
 
 ### Team Name: The Qubits
 
